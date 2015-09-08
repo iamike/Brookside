@@ -33,17 +33,15 @@ var app = {
 
 //$(function() {
 
+//make screen viewport center
+app.resize();
+
 //creatjs touch event
 createjs.Touch.enable(stage, true, false);
 
 //init the canvas animation when it ready.
 init();
 
-
-
-
-//make screen viewport center
-app.resize();
 
 //add swpie event
 $("#spot").swipe({
