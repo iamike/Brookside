@@ -44,6 +44,10 @@ var app = {
             left: -(width - domwidth) / 2,
             top: -(height - domheight) / 2
         });
+    },
+    showMode:function(){
+        var $modeSelector = $("#modeSelector");
+            $modeSelector.fadeIn(2000);
     }
 
 };
@@ -69,7 +73,7 @@ var app = {
         //Generic swipe handler for all directions
         swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
 
-                alert('ops')
+                exportRoot.gotoAndPlay("toSence");
 
 
 

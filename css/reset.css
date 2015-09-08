@@ -173,3 +173,8 @@ a.red:hover{ text-decoration: underline; color:#ff5656;}
 .big-bg-body{position: absolute; left:0px; top:0px; width: 320px; height: 539px;}
 .load-bg{ width: 320px; position: absolute;left:0px; top:0px;  }
 
+#modeSelector {
+    display: none;
+    position: absolute; width: 255px; height: 151px; left: 50%; top:200px;  margin-left: -125px;
+}
+#mode1,#mode2 {display: none;}
