@@ -469,7 +469,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,305,332);
 	this.initialize(mode,startPosition,loop,{});
 
 	// timeline functions:
-	this.frame_20 = function() {
+	this.frame_19 = function() {
 		this.stop();
 		app.showSpot();
 	}
@@ -479,7 +479,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,305,332);
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(20).call(this.frame_20).wait(21).call(this.frame_41).wait(25));
+	this.timeline.addTween(cjs.Tween.get(this).wait(19).call(this.frame_19).wait(22).call(this.frame_41).wait(25));
 
 	// chocolate
 	this.instance = new lib.Choco_one_00092();
@@ -621,7 +621,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,305,332);
 	this.instance_52.setTransform(320,385.8,1,1,0,0,0,152.5,166);
 	this.instance_52.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_52).to({y:530,alpha:1},20).to({_off:true},22).wait(24));
+	this.timeline.addTween(cjs.Tween.get(this.instance_52).to({y:530,alpha:1},19).to({_off:true},23).wait(24));
 
 	// Layer 9
 	this.instance_53 = new lib.chocolateFallDown();
