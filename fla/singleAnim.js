@@ -9,7 +9,7 @@ lib.properties = {
 	fps: 18,
 	color: "#FFFFFF",
 	manifest: [
-		{src:"images/_21f.jpg", id:"_21f"},
+		{src:"images/bg.jpg", id:"bg"},
 		{src:"images/Choco_one_00092.png", id:"Choco_one_00092"},
 		{src:"images/Choco_one_00094.png", id:"Choco_one_00094"},
 		{src:"images/Choco_one_00096.png", id:"Choco_one_00096"},
@@ -70,8 +70,8 @@ lib.properties = {
 
 
 
-(lib._21f = function() {
-	this.initialize(img._21f);
+(lib.bg = function() {
+	this.initialize(img.bg);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,640,1078);
 
@@ -631,7 +631,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,305,332);
 	this.timeline.addTween(cjs.Tween.get(this.instance_53).wait(65).to({_off:false},0).wait(1));
 
 	// 2-1-f
-	this.instance_54 = new lib._21f();
+	this.instance_54 = new lib.bg();
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_54).wait(66));
 
