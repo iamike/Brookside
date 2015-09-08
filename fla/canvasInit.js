@@ -37,7 +37,8 @@ function handleComplete(evt) {
 
 
     //hide progress
-    $('.load-watch-main').hide();
+    $('#loadBody').hide();
+
 }
 
 function handleProgress(evt) {

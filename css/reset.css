@@ -178,3 +178,18 @@ a.red:hover{ text-decoration: underline; color:#ff5656;}
     position: absolute; width: 255px; height: 151px; left: 50%; top:200px;  margin-left: -125px;
 }
 #mode1,#mode2 {display: none;}
+
+
+/* tap spot*/
+
+#spot {
+    display: none;
+    position: absolute; z-index: 99999; left: 50%; top:50%; margin-left:-26px;margin-top: -25px;
+}
+#swipeHint {
+    display: none;
+    position: absolute; z-index: 99999; left: 50%; top: 50%;    
+    width:215px;height:244px;  
+    margin-left: -117px;
+    margin-top: -138px;
+}

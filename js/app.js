@@ -1,29 +1,4 @@
 //app function
-var section = [{
-    lableName: 'begin',
-    instanceName: 'instance_9'//star bg
-}, {
-    lableName: 'section1', //志
-    instanceName: 'instance_7'
-}, {
-    lableName: 'section2', //思
-    instanceName: 'instance_6'
-}, {
-    lableName: 'section3', //慧
-    instanceName: 'instance_5'
-}, {
-    lableName: 'section4', //念
-    instanceName: 'instance_4'
-}, {
-    lableName: 'section5',
-    instanceName: ''
-}, {
-    lableName: 'section6',
-    instanceName: ''
-}, {
-    lableName: 'end',
-    instanceName: ''
-}]
 var app = {
     lockedStory: false,
     currentStoryId: 0,
@@ -75,11 +50,13 @@ var app = {
 
                 exportRoot.gotoAndPlay("toSence");
 
+                $("#start").hide();
 
 
         },
         //Default is 75px, set to 0 for demo so any distance triggers swipe
         threshold: 150
     });
+
 
 //});
