@@ -30,7 +30,7 @@ var app = {
 
 
 //$(function() {
-    app.resize();
+    //app.resize();
 
     //creatjs touch event
     createjs.Touch.enable(stage, true, false);
