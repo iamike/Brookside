@@ -8,7 +8,21 @@ lib.properties = {
 	height: 1078,
 	fps: 25,
 	color: "#FFFFFF",
-	manifest: []
+	manifest: [
+		{src:"images/_21f.jpg", id:"_21f"},
+		{src:"images/arrow.png", id:"arrow"},
+		{src:"images/bg.jpg", id:"bg"},
+		{src:"images/c1.png", id:"c1"},
+		{src:"images/c2.png", id:"c2"},
+		{src:"images/c3.png", id:"c3"},
+		{src:"images/chocolate.png", id:"chocolate"},
+		{src:"images/chocolateShadow.png", id:"chocolateShadow"},
+		{src:"images/hand.png", id:"hand"},
+		{src:"images/heading1.png", id:"heading1"},
+		{src:"images/heading2.png", id:"heading2"},
+		{src:"images/heading3.jpg", id:"heading3"},
+		{src:"images/senceInChocolate.png", id:"senceInChocolate"}
+	]
 };
 
 
@@ -18,94 +32,81 @@ lib.properties = {
 
 
 (lib._21f = function() {
-	this.spriteSheet = ss["canvasAnim_atlas_"];
-	this.gotoAndStop(0);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img._21f);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,640,1078);
 
 
 (lib.arrow = function() {
-	this.spriteSheet = ss["canvasAnim_atlas_"];
-	this.gotoAndStop(1);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.arrow);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,640,1078);
 
 
 (lib.bg = function() {
-	this.spriteSheet = ss["canvasAnim_atlas_"];
-	this.gotoAndStop(2);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.bg);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,640,1078);
 
 
 (lib.c1 = function() {
-	this.spriteSheet = ss["canvasAnim_atlas_"];
-	this.gotoAndStop(3);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.c1);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,155,139);
 
 
 (lib.c2 = function() {
-	this.spriteSheet = ss["canvasAnim_atlas_"];
-	this.gotoAndStop(4);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.c2);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,248,190);
 
 
 (lib.c3 = function() {
-	this.spriteSheet = ss["canvasAnim_atlas_"];
-	this.gotoAndStop(5);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.c3);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,157,194);
 
 
 (lib.chocolate = function() {
-	this.spriteSheet = ss["canvasAnim_atlas_"];
-	this.gotoAndStop(6);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.chocolate);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,640,1078);
 
 
 (lib.chocolateShadow = function() {
-	this.spriteSheet = ss["canvasAnim_atlas_"];
-	this.gotoAndStop(7);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.chocolateShadow);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,640,1078);
 
 
 (lib.hand = function() {
-	this.spriteSheet = ss["canvasAnim_atlas_"];
-	this.gotoAndStop(8);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.hand);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,640,1078);
 
 
 (lib.heading1 = function() {
-	this.spriteSheet = ss["canvasAnim_atlas_"];
-	this.gotoAndStop(9);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.heading1);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,640,1078);
 
 
 (lib.heading2 = function() {
-	this.spriteSheet = ss["canvasAnim_atlas_"];
-	this.gotoAndStop(10);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.heading2);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,640,1078);
 
 
 (lib.heading3 = function() {
-	this.spriteSheet = ss["canvasAnim_atlas_"];
-	this.gotoAndStop(11);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.heading3);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,426,64);
 
 
 (lib.senceInChocolate = function() {
-	this.spriteSheet = ss["canvasAnim_atlas_"];
-	this.gotoAndStop(12);
-}).prototype = p = new cjs.Sprite();
-
+	this.initialize(img.senceInChocolate);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,689,522);
 
 
 (lib.Tween30 = function() {
