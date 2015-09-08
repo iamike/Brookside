@@ -30,6 +30,7 @@ var app = {
 
 
 //$(function() {
+    app.resize();
 
     //creatjs touch event
     createjs.Touch.enable(stage, true, false);
@@ -41,7 +42,6 @@ var app = {
 
 
     //make screen viewport center
-    app.resize();
 
     //add swpie event
     $("#start").swipe({
