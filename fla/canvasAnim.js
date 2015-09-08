@@ -499,14 +499,14 @@ p.nominalBounds = new cjs.Rectangle(-320,-539,640,1078);
 	this.instance_13.setTransform(410.1,725.6,0.535,0.535,0,0,0,78.5,97);
 	this.instance_13._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_13).wait(135).to({_off:false},0).to({scaleX:0.69,scaleY:0.69,x:398.1,y:721.5},11).to({scaleX:0.71,scaleY:0.71,x:399.7,y:718.1},8).to({regX:78.4,scaleX:0.97,scaleY:0.97,x:406,y:682.8},13).to({regX:78.5,scaleX:1.18,scaleY:1.18,rotation:3.3,x:412.3,y:666.5},11).to({regX:78.4,scaleX:1.65,scaleY:1.65,rotation:11,x:573.2,y:981.4},18).wait(12));
+	this.timeline.addTween(cjs.Tween.get(this.instance_13).wait(135).to({_off:false},0).to({scaleX:0.69,scaleY:0.69,x:398.1,y:721.5},11).to({scaleX:0.71,scaleY:0.71,x:399.7,y:718.1},8).to({regX:78.4,scaleX:0.97,scaleY:0.97,x:406,y:682.8},13).to({regX:78.5,scaleX:1.18,scaleY:1.18,rotation:3.3,x:412.3,y:666.5},11).to({regX:78.4,scaleX:1.65,scaleY:1.65,rotation:11,x:573.2,y:981.4,alpha:0},18).wait(12));
 
 	// c2
 	this.instance_14 = new lib.c2_1();
 	this.instance_14.setTransform(264.1,742.2,0.363,0.363,0,0,0,124,94.9);
 	this.instance_14._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_14).wait(135).to({_off:false},0).to({regY:95,scaleX:0.48,scaleY:0.48},11).to({scaleX:0.52,scaleY:0.52,x:265.1,y:735.1},8).to({scaleX:0.67,scaleY:0.67,x:245,y:727.2},13).to({regY:95.2,scaleX:0.82,scaleY:0.82,x:197,y:715.1},11).to({regY:95.1,scaleX:1.24,scaleY:1.24,x:86.9,y:1009.5},18).wait(12));
+	this.timeline.addTween(cjs.Tween.get(this.instance_14).wait(135).to({_off:false},0).to({regY:95,scaleX:0.48,scaleY:0.48},11).to({scaleX:0.52,scaleY:0.52,x:265.1,y:735.1},8).to({scaleX:0.67,scaleY:0.67,x:245,y:727.2},13).to({regY:95.2,scaleX:0.82,scaleY:0.82,x:197,y:715.1},11).to({regY:95.1,scaleX:1.24,scaleY:1.24,x:86.9,y:1009.5,alpha:0},18).wait(12));
 
 	// c1
 	this.instance_15 = new lib.c1_1();
