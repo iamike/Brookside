@@ -487,52 +487,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,305,332);
 p.nominalBounds = new cjs.Rectangle(0,0,405,447);
 
 
-(lib.元件8 = function() {
-	this.initialize();
-
-	// 图层 1
-	this.instance = new lib.b6();
-
-	this.addChild(this.instance);
-}).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(0,0,237,400);
-
-
-(lib.Tween9 = function() {
-	this.initialize();
-
-	// Layer 1
-	this.instance = new lib.bg_sence();
-	this.instance.setTransform(-320,-539);
-
-	this.addChild(this.instance);
-}).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(-320,-539,640,1078);
-
-
-(lib.Tween8 = function() {
-	this.initialize();
-
-	// Layer 1
-	this.instance = new lib.bg_sence();
-	this.instance.setTransform(-320,-539);
-
-	this.addChild(this.instance);
-}).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(-320,-539,640,1078);
-
-
-(lib.Symbol1 = function() {
-	this.initialize();
-
-	// Layer 1
-	this.instance = new lib.Choco_one_00147();
-
-	this.addChild(this.instance);
-}).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(0,0,640,1078);
-
-
 (lib.Tween7 = function() {
 	this.initialize();
 
@@ -605,18 +559,64 @@ p.nominalBounds = new cjs.Rectangle(-222.4,-245.5,444.9,491);
 p.nominalBounds = new cjs.Rectangle(-222.4,-245.5,444.9,491);
 
 
-(lib.Symbol1_1 = function() {
+(lib.Symbol1 = function() {
 	this.initialize();
 
 	// Layer 1
-	this.instance_1 = new lib.s1();
+	this.instance = new lib.s1();
 
-	this.addChild(this.instance_1);
+	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
 p.nominalBounds = new cjs.Rectangle(0,0,305,332);
 
 
-(lib.Symbol1_2 = function() {
+(lib.元件8 = function() {
+	this.initialize();
+
+	// 图层 1
+	this.instance = new lib.b6();
+
+	this.addChild(this.instance);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,237,400);
+
+
+(lib.Tween9 = function() {
+	this.initialize();
+
+	// Layer 1
+	this.instance = new lib.bg_sence();
+	this.instance.setTransform(-320,-539);
+
+	this.addChild(this.instance);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(-320,-539,640,1078);
+
+
+(lib.Tween8 = function() {
+	this.initialize();
+
+	// Layer 1
+	this.instance = new lib.bg_sence();
+	this.instance.setTransform(-320,-539);
+
+	this.addChild(this.instance);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(-320,-539,640,1078);
+
+
+(lib.Symbol1copy = function() {
+	this.initialize();
+
+	// Layer 1
+	this.instance = new lib.Choco_one_00147();
+
+	this.addChild(this.instance);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,640,1078);
+
+
+(lib.Symbol1_1 = function() {
 	this.initialize();
 
 	// Layer 1
@@ -907,7 +907,7 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 	this.initialize(mode,startPosition,loop,{});
 
 	// 图层 2
-	this.instance = new lib.Symbol1_2("synched",0);
+	this.instance = new lib.Symbol1_1("synched",0);
 	this.instance.setTransform(5.4,-3.8,1,1,0,0,0,10,4.3);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(25));
@@ -1033,7 +1033,7 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 
 	this.instance_22 = new lib.Choco_one_00143();
 
-	this.instance_23 = new lib.Symbol1();
+	this.instance_23 = new lib.Symbol1copy();
 	this.instance_23.setTransform(320,539,1,1,0,0,0,320,539);
 	this.instance_23._off = true;
 
@@ -1125,7 +1125,7 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 	this.timeline.addTween(cjs.Tween.get(this.instance_50).wait(59).to({_off:false},0).to({_off:true,y:260.4,alpha:1},6).wait(249));
 
 	// s1
-	this.instance_52 = new lib.Symbol1_1("synched",0);
+	this.instance_52 = new lib.Symbol1("synched",0);
 	this.instance_52.setTransform(320,385.8,1,1,0,0,0,152.5,166);
 	this.instance_52.alpha = 0;
 
@@ -1319,7 +1319,7 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 	this.instance_77.alpha = 0;
 	this.instance_77._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_77).wait(74).to({_off:false},0).to({alpha:1},9).to({_off:true},181).wait(50));
+	this.timeline.addTween(cjs.Tween.get(this.instance_77).wait(74).to({_off:false},0).to({alpha:1},11).wait(228).to({startPosition:0},0).wait(1));
 
 	// 2-1-f
 	this.instance_78 = new lib.bg_sence();
