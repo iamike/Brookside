@@ -917,9 +917,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,264.9,264.9);
 		this.stop();
 		app.showSwipeHint();
 	}
+	this.frame_313 = function() {
+		this.stop();
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(19).call(this.frame_19).wait(22).call(this.frame_41).wait(273));
+	this.timeline.addTween(cjs.Tween.get(this).wait(19).call(this.frame_19).wait(22).call(this.frame_41).wait(272).call(this.frame_313).wait(1));
 
 	// chocolate
 	this.instance = new lib.Choco_one_00092();

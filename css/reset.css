@@ -142,7 +142,7 @@ a.red:hover{ text-decoration: underline; color:#ff5656;}
     position: absolute;
     margin-left: -60px;
     left: 50%;
-    top: 33px;
+    top: 40px;
     z-index: 999;
 
 }
