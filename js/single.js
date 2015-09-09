@@ -41,7 +41,6 @@ createjs.Touch.enable(stage, true, false);
 init();
 
 //make screen viewport center
-
 app.resize();
 
 
@@ -61,5 +60,9 @@ $('#swipeHint').swipe({
     },
     threshold: 200
 })
-
+$('.option').swipe({
+    tap: function(event, target) {
+        console.log(target.id);
+    }
+})
 //});
