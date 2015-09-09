@@ -25,6 +25,9 @@ var app = {
     },
     showSwipeHint: function() {
         $('#swipeHint').fadeIn();
+    },
+    showResult:function(){
+
     }
 
 };
@@ -63,6 +66,7 @@ $('#swipeHint').swipe({
 $('.option').swipe({
     tap: function(event, target) {
         console.log(target.id);
+        //exportRoot.gotoAndPlay("showResult1");
     }
 })
 //});

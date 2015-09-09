@@ -202,3 +202,5 @@ a.red:hover{ text-decoration: underline; color:#ff5656;}
 #option1 {left: 89px;top: 336px;}
 #option2 {left: 149px;top: 303px;}
 #option3 {left: 215px;top: 342px;}
+
+#coupon, #shopLink { display: block; width:200px; height: 25px; position: absolute; z-index: 99999; background-color: black; }
