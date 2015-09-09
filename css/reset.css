@@ -157,7 +157,7 @@ a.red:hover{ text-decoration: underline; color:#ff5656;}
 /* load start */
 .load-body{ position: absolute; left:0px; top:0px; z-index: 1000; width: 320px; height: 539px;}
 .load-txt{ position: absolute; left:78px; top:240px; width: 167px;}
-.load-watch-main{ position: absolute; left:120px; top:240px; width: 108px; height: 108px; text-align: center; }
+.load-watch-main{ position: absolute; left:110px; top:240px; width: 108px; height: 108px; text-align: center; }
 .load-watch-main .progress {
     text-align: center;
     padding-top:10px;

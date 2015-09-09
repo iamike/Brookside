@@ -11,7 +11,7 @@ lib.properties = {
 	manifest: [
 		{src:"images/arrow.png", id:"arrow"},
 		{src:"images/bg.jpg", id:"bg"},
-		{src:"images/bg_1.jpg", id:"bg_1"},
+		{src:"images/bg_sence.jpg", id:"bg_sence"},
 		{src:"images/c1.png", id:"c1"},
 		{src:"images/c2.png", id:"c2"},
 		{src:"images/c3.png", id:"c3"},
@@ -43,8 +43,8 @@ p.nominalBounds = new cjs.Rectangle(0,0,640,1078);
 p.nominalBounds = new cjs.Rectangle(0,0,640,1078);
 
 
-(lib.bg_1 = function() {
-	this.initialize(img.bg_1);
+(lib.bg_sence = function() {
+	this.initialize(img.bg_sence);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,640,1078);
 
@@ -137,7 +137,7 @@ p.nominalBounds = new cjs.Rectangle(-213,-32,426,64);
 	this.initialize();
 
 	// Layer 1
-	this.instance = new lib.bg_1();
+	this.instance = new lib.bg_sence();
 	this.instance.setTransform(-320,-539);
 
 	this.addChild(this.instance);
@@ -149,7 +149,7 @@ p.nominalBounds = new cjs.Rectangle(-320,-539,640,1078);
 	this.initialize();
 
 	// Layer 1
-	this.instance = new lib.bg_1();
+	this.instance = new lib.bg_sence();
 	this.instance.setTransform(-320,-539);
 
 	this.addChild(this.instance);
@@ -346,7 +346,7 @@ p.nominalBounds = new cjs.Rectangle(-320,-539,640,1078);
 p.nominalBounds = new cjs.Rectangle(-320,-539,640,1078);
 
 
-(lib.bg_2 = function() {
+(lib.bg_1 = function() {
 	this.initialize();
 
 	// Layer 1
@@ -541,7 +541,7 @@ p.nominalBounds = new cjs.Rectangle(-320,-539,640,1078);
 	this.timeline.addTween(cjs.Tween.get(this.instance_18).wait(178).to({_off:false},0).to({_off:true,scaleX:1,scaleY:1,y:539,alpha:1},18).wait(12));
 
 	// bg
-	this.instance_20 = new lib.bg_2();
+	this.instance_20 = new lib.bg_1();
 	this.instance_20.setTransform(320,539,1,1,0,0,0,320,539);
 	this.instance_20.alpha = 0;
 
