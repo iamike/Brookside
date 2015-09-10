@@ -1121,6 +1121,7 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 	// timeline functions:
 	this.frame_6 = function() {
 		this.stop();
+		app.doubleModeStep1();
 	}
 	this.frame_7 = function() {
 		app.doubleModeStep2();
@@ -1134,7 +1135,6 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 	}
 	this.frame_50 = function() {
 		this.stop();
-		
 		app.detectShake();
 	}
 	this.frame_313 = function() {

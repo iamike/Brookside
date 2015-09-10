@@ -20,17 +20,17 @@ var app = {
             top: -(height - domheight) / 2
         });
     },
+    doubleModeStep1:function(){
+        $('.step1').show();
+    },
     doubleModeStep2: function() {
-        //$('.load-body').hide();
-        $('.step2').hide();
+        $('.step1').hide();
     },
     doubleModeStep3: function() {
-        $('.step2').hide();
-        $('.step3').show();
+        $('.step2').show();
     },
     doubleModeStep4: function() {
-        $('.step3').hide();
-        $('.step4').show();
+        $('.step2').hide();
     },
     detectShake: function() {
         //create a new instance of shake.js.

@@ -142,7 +142,7 @@ a.red:hover{ text-decoration: underline; color:#ff5656;}
     position: absolute;
     margin-left: -60px;
     left: 50%;
-    top: 40px;
+    top: 33px;
     z-index: 999;
 
 }
@@ -205,6 +205,7 @@ a.red:hover{ text-decoration: underline; color:#ff5656;}
 
 #coupon, #shopLink { display: block; width:200px; height: 25px; position: absolute; z-index: 99999; background-color: black; }
 
+.stepEl {display: none;}
 #QRcode {
     position: absolute;
     left: 83px;
