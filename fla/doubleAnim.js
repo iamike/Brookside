@@ -10,8 +10,6 @@ lib.properties = {
 	color: "#FFFFFF",
 	manifest: [
 		{src:"images/doublebg.jpg", id:"doublebg"},
-		{src:"images/heading4.png", id:"heading4"},
-		{src:"images/heading5.png", id:"heading5"},
 		{src:"images/Juice_one_00001.png", id:"Juice_one_00001"},
 		{src:"images/Juice_one_00003.png", id:"Juice_one_00003"},
 		{src:"images/Juice_one_00005.png", id:"Juice_one_00005"},
@@ -49,18 +47,6 @@ lib.properties = {
 	this.initialize(img.doublebg);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,640,1078);
-
-
-(lib.heading4 = function() {
-	this.initialize(img.heading4);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,400,58);
-
-
-(lib.heading5 = function() {
-	this.initialize(img.heading5);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,410,58);
 
 
 (lib.Juice_one_00001 = function() {
@@ -207,54 +193,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,305,332);
 p.nominalBounds = new cjs.Rectangle(0,0,406,80);
 
 
-(lib.Tween7 = function() {
-	this.initialize();
-
-	// Layer 1
-	this.instance = new lib.heading5();
-	this.instance.setTransform(-205,-29);
-
-	this.addChild(this.instance);
-}).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(-205,-29,410,58);
-
-
-(lib.Tween6 = function() {
-	this.initialize();
-
-	// Layer 1
-	this.instance = new lib.heading5();
-	this.instance.setTransform(-205,-29);
-
-	this.addChild(this.instance);
-}).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(-205,-29,410,58);
-
-
-(lib.Tween5 = function() {
-	this.initialize();
-
-	// Layer 1
-	this.instance = new lib.heading4();
-	this.instance.setTransform(-200,-29);
-
-	this.addChild(this.instance);
-}).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(-200,-29,400,58);
-
-
-(lib.Tween4 = function() {
-	this.initialize();
-
-	// Layer 1
-	this.instance = new lib.heading4();
-	this.instance.setTransform(-200,-29);
-
-	this.addChild(this.instance);
-}).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(-200,-29,400,58);
-
-
 (lib.Tween2 = function() {
 	this.initialize();
 
@@ -293,6 +231,9 @@ p.nominalBounds = new cjs.Rectangle(0,0,305,332);
 		this.stop();
 		app.doubleModeStep3();
 	}
+	this.frame_29 = function() {
+		app.doubleModeStep4();
+	}
 	this.frame_50 = function() {
 		this.stop();
 		
@@ -303,7 +244,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,305,332);
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(6).call(this.frame_6).wait(1).call(this.frame_7).wait(21).call(this.frame_28).wait(22).call(this.frame_50).wait(39).call(this.frame_89).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).wait(6).call(this.frame_6).wait(1).call(this.frame_7).wait(21).call(this.frame_28).wait(1).call(this.frame_29).wait(21).call(this.frame_50).wait(39).call(this.frame_89).wait(1));
 
 	// juice
 	this.instance = new lib.Juice_one_00001();
@@ -359,43 +300,18 @@ p.nominalBounds = new cjs.Rectangle(0,0,305,332);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_22).to({alpha:1},6).to({_off:true},1).wait(83));
 
-	// h4
-	this.instance_23 = new lib.Tween4("synched",0);
-	this.instance_23.setTransform(320,258.2);
+	// s1
+	this.instance_23 = new lib.Symbol1("synched",0);
+	this.instance_23.setTransform(320,385.8,1,1,0,0,0,152.5,166);
 	this.instance_23.alpha = 0;
 	this.instance_23._off = true;
 
-	this.instance_24 = new lib.Tween5("synched",0);
-	this.instance_24.setTransform(320,276.2);
-	this.instance_24._off = true;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_23).wait(50).to({_off:false},0).to({_off:true,y:276.2,alpha:1},6).wait(34));
-	this.timeline.addTween(cjs.Tween.get(this.instance_24).wait(50).to({_off:false},6).wait(7).to({startPosition:0},0).to({alpha:0},5).to({_off:true},1).wait(21));
-
-	// h5
-	this.instance_25 = new lib.Tween6("synched",0);
-	this.instance_25.setTransform(320,232.4);
-	this.instance_25.alpha = 0;
-	this.instance_25._off = true;
-
-	this.instance_26 = new lib.Tween7("synched",0);
-	this.instance_26.setTransform(320,260.4);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_25}]},68).to({state:[{t:this.instance_26}]},6).to({state:[]},10).wait(6));
-	this.timeline.addTween(cjs.Tween.get(this.instance_25).wait(68).to({_off:false},0).to({_off:true,y:260.4,alpha:1},6).wait(16));
-
-	// s1
-	this.instance_27 = new lib.Symbol1("synched",0);
-	this.instance_27.setTransform(320,385.8,1,1,0,0,0,152.5,166);
-	this.instance_27.alpha = 0;
-	this.instance_27._off = true;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_27).wait(7).to({_off:false},0).to({y:530,alpha:1},21).to({_off:true},22).wait(40));
+	this.timeline.addTween(cjs.Tween.get(this.instance_23).wait(7).to({_off:false},0).to({y:530,alpha:1},21).to({_off:true},22).wait(40));
 
 	// 2-1-f
-	this.instance_28 = new lib.doublebg();
+	this.instance_24 = new lib.doublebg();
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_28).wait(90));
+	this.timeline.addTween(cjs.Tween.get(this.instance_24).wait(90));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(320,539,640,1078);
