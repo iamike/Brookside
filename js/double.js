@@ -48,7 +48,7 @@ var app = {
         function shakeEventDidOccur() {
 
             //put your own code here etc.
-            alert('Shake!');
+            exportRoot.gotoAndPlay();
         }
     }
 
