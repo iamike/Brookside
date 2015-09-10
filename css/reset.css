@@ -184,14 +184,14 @@ a.red:hover{ text-decoration: underline; color:#ff5656;}
 
 #spot {
     display: none;
-    position: absolute; z-index: 99999; left: 50%; top:50%; margin-left:-26px;margin-top: -25px;
+    position: absolute; z-index: 99999; left: 50%; top:50%;
+    margin-left:-26px;margin-top: -25px;
 }
 #swipeHint {
     display: none;
     position: absolute; z-index: 99999; left: 50%; top: 50%;    
     width:215px;height:244px;  
-    margin-left: -117px;
-    margin-top: -138px;
+    margin-left: -117px;margin-top: -138px;
 }
 .option {
     position: absolute; z-index: 99999; 
@@ -204,3 +204,12 @@ a.red:hover{ text-decoration: underline; color:#ff5656;}
 #option3 {left: 215px;top: 342px;}
 
 #coupon, #shopLink { display: block; width:200px; height: 25px; position: absolute; z-index: 99999; background-color: black; }
+
+#QRcode {
+    position: absolute;
+    left: 83px;
+    top: 193px;
+    width: 154px;
+    height: 154px;
+    z-index: 9999;
+}

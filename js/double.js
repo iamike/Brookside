@@ -20,9 +20,17 @@ var app = {
             top: -(height - domheight) / 2
         });
     },
-    showMode:function(){
-        var $modeSelector = $("#modeSelector");
-            $modeSelector.fadeIn(2000);
+    doubleModeStep2:function(){
+        //$('.load-body').hide();
+        $('.step2').hide();
+    },
+    doubleModeStep3:function(){
+        $('.step2').hide();
+        $('.step3').show();
+    },
+    doubleModeStep4:function(){
+        $('.step3').hide();
+        $('.step4').show();
     }
 
 };
@@ -37,25 +45,29 @@ var app = {
     //init the canvas animation when it ready.
     init();
 
-
-
-
     //make screen viewport center
     app.resize();
 
     //add swpie event
-    $("#start").swipe({
+    $("#QRcode").swipe({
         //Generic swipe handler for all directions
-        swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+        tap: function(event, direction, distance, duration, fingerCount, fingerData) {
 
-                exportRoot.gotoAndPlay("toSence");
+                 exportRoot.gotoAndPlay();
 
-                $("#start").hide();
+                // $("#start").hide();
 
+        }
+    });
+    $("#spot").swipe({
+        //Generic swipe handler for all directions
+        tap: function(event, direction, distance, duration, fingerCount, fingerData) {
 
-        },
-        //Default is 75px, set to 0 for demo so any distance triggers swipe
-        threshold: 150
+                 exportRoot.gotoAndPlay();
+
+                // $("#start").hide();
+
+        }
     });
 
 
