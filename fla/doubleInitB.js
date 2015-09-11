@@ -9,7 +9,7 @@ function init() {
     loader.addEventListener("fileload", handleFileLoad);
     loader.addEventListener("complete", handleComplete);
     loader.addEventListener("progress", handleProgress);
-    //loader.loadFile({src:"fla/images/doubleAnim_atlas_.json", type:"spritesheet", id:"doubleAnim_atlas_"}, true);
+    //loader.loadFile({src:"fla/images/doubleAnimB_atlas_.json", type:"spritesheet", id:"doubleAnimB_atlas_"}, true);
 
 
     loader.loadManifest(lib.properties.manifest);
@@ -23,9 +23,9 @@ function handleFileLoad(evt) {
 
 function handleComplete(evt) {
     var queue = evt.target;
-    //ss["doubleAnim_atlas_"] = queue.getResult("doubleAnim_atlas_");
+    //ss["doubleAnimB_atlas_"] = queue.getResult("doubleAnimB_atlas_");
 
-    exportRoot = new lib.doubleAnim();
+    exportRoot = new lib.doubleAnimB();
 
     stage = new createjs.Stage(canvas);
     stage.addChild(exportRoot);
