@@ -19,7 +19,8 @@ a.red:hover{ text-decoration: underline; color:#ff5656;}
 
 .radius{border-radius: 50%;}
 
-
+body { -webkit-touch-callout: none !important; }
+a,img,canvas { -webkit-user-select: none !important; }
 /* link end */
 
 /* gap start */
