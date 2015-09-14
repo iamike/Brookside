@@ -1191,9 +1191,6 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 	this.initialize(mode,startPosition,loop,{showResult1:347,showResult2:371,showResult3:396});
 
 	// timeline functions:
-	this.frame_7 = function() {
-		app.doubleModeStep2();
-	}
 	this.frame_19 = function() {
 		this.stop();
 		$("#drawCircle").show();
@@ -1231,7 +1228,7 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(7).call(this.frame_7).wait(12).call(this.frame_19).wait(6).call(this.frame_25).wait(6).call(this.frame_31).wait(5).call(this.frame_36).wait(4).call(this.frame_40).wait(1).call(this.frame_41).wait(73).call(this.frame_114).wait(232).call(this.frame_346).wait(24).call(this.frame_370).wait(25).call(this.frame_395).wait(25).call(this.frame_420).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).wait(19).call(this.frame_19).wait(6).call(this.frame_25).wait(6).call(this.frame_31).wait(5).call(this.frame_36).wait(4).call(this.frame_40).wait(1).call(this.frame_41).wait(73).call(this.frame_114).wait(232).call(this.frame_346).wait(24).call(this.frame_370).wait(25).call(this.frame_395).wait(25).call(this.frame_420).wait(1));
 
 	// cho
 	this.instance = new lib.Choco_one_00092();

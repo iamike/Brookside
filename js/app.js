@@ -19,10 +19,6 @@ var app = {
             left: -(width - domwidth) / 2,
             top: -(height - domheight) / 2
         });
-
-
-
-
     },
     //single
     showSpot: function() {
@@ -62,7 +58,6 @@ var app = {
 
 
 
-//$(function() {
 
 //creatjs touch event
 createjs.Touch.enable(stage, true, false);
@@ -73,29 +68,28 @@ init();
 //make screen viewport center
 app.resize();
 
-//add swpie event
+//global parts
+$('.option').swipe({
+    tap: function(event, target) {
+        console.log(target.id);
+        //exportRoot.gotoAndPlay("showResult1");
+    }
+})
 $("#start").swipe({
-    //Generic swipe handler for all directions
     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-
         exportRoot.gotoAndPlay("toSence");
-
         $("#start").hide();
-
-
     },
-    //Default is 75px, set to 0 for demo so any distance triggers swipe
     threshold: 150
 });
 
+
 //Single Mode
-//add swpie event
 $("#spot").swipe({
-    //Generic swipe handler for all directions
     tap: function(event, target) {
         exportRoot.gotoAndPlay();
-        $("#spot").hide();
-    }
+    },
+    threshold: 150
 });
 $('#swipeHint').swipe({
     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
@@ -104,47 +98,22 @@ $('#swipeHint').swipe({
     },
     threshold: 200
 })
-$('.option').swipe({
-    tap: function(event, target) {
-        console.log(target.id);
-        //exportRoot.gotoAndPlay("showResult1");
-    }
-})
-//double Mode
-//add swpie event
+
+//double Mode A
 $("#QRcode").swipe({
-    //Generic swipe handler for all directions
     tap: function(event, direction, distance, duration, fingerCount, fingerData) {
-
         exportRoot.gotoAndPlay();
-
-        // $("#start").hide();
 
     }
 });
-$("#spot").swipe({
-    //Generic swipe handler for all directions
-    tap: function(event, direction, distance, duration, fingerCount, fingerData) {
 
-        exportRoot.gotoAndPlay();
-
-        // $("#start").hide();
-
-    }
-});
 //double Mode B
 $("#drawCircle").swipe({
-    //Generic swipe handler for all directions
     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
 
         console.log('test');
         exportRoot.gotoAndPlay();
 
-        // $("#start").hide();
-
     },
-    threshold:50
+    threshold: 50
 });
-
-
-//});

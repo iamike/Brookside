@@ -6,7 +6,7 @@ var p; // shortcut to reference prototypes
 lib.properties = {
 	width: 640,
 	height: 1078,
-	fps: 25,
+	fps: 15,
 	color: "#FFFFFF",
 	manifest: [
 		{src:"imagesDoubleA/a12.png", id:"a12"},
@@ -1121,17 +1121,18 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 	// timeline functions:
 	this.frame_6 = function() {
 		this.stop();
-		app.doubleModeStep1();
+		$("#QRcode").show();
+	}
+	this.frame_7 = function() {
+		$("#QRcode").hide();
 	}
 	this.frame_28 = function() {
 		this.stop();
 		$("#spot").show();
 	}
-	this.frame_29 = function() {
-		app.doubleModeStep4();
-	}
 	this.frame_50 = function() {
 		this.stop();
+		$("#spot").show();
 	}
 	this.frame_51 = function() {
 		$("#spot").hide();
@@ -1155,7 +1156,7 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(6).call(this.frame_6).wait(22).call(this.frame_28).wait(1).call(this.frame_29).wait(21).call(this.frame_50).wait(1).call(this.frame_51).wait(48).call(this.frame_99).wait(214).call(this.frame_313).wait(24).call(this.frame_337).wait(25).call(this.frame_362).wait(25).call(this.frame_387).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).wait(6).call(this.frame_6).wait(1).call(this.frame_7).wait(21).call(this.frame_28).wait(22).call(this.frame_50).wait(1).call(this.frame_51).wait(48).call(this.frame_99).wait(214).call(this.frame_313).wait(24).call(this.frame_337).wait(25).call(this.frame_362).wait(25).call(this.frame_387).wait(1));
 
 	// juiceMerge
 	this.instance = new lib.mix0001();
