@@ -39,18 +39,6 @@ var app = {
         $modeSelector.fadeIn(2000);
     },
     //double 
-    doubleModeStep1: function() {
-        $('.step1').show();
-    },
-    doubleModeStep2: function() {
-        $('.step1').hide();
-    },
-    doubleModeStep3: function() {
-        $('.step2').show();
-    },
-    doubleModeStep4: function() {
-        $('.step2').hide();
-    },
     detectShake: function() {
         //create a new instance of shake.js.
         var myShakeEvent = new Shake({
@@ -144,4 +132,19 @@ $("#spot").swipe({
 
     }
 });
+//double Mode B
+$("#drawCircle").swipe({
+    //Generic swipe handler for all directions
+    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+        console.log('test');
+        exportRoot.gotoAndPlay();
+
+        // $("#start").hide();
+
+    },
+    threshold:50
+});
+
+
 //});

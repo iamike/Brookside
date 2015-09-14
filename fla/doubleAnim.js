@@ -1123,21 +1123,25 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 		this.stop();
 		app.doubleModeStep1();
 	}
-	this.frame_7 = function() {
-		app.doubleModeStep2();
-	}
 	this.frame_28 = function() {
 		this.stop();
-		app.doubleModeStep3();
+		$("#spot").show();
 	}
 	this.frame_29 = function() {
 		app.doubleModeStep4();
 	}
 	this.frame_50 = function() {
 		this.stop();
+	}
+	this.frame_51 = function() {
+		$("#spot").hide();
+	}
+	this.frame_99 = function() {
+		this.stop();
 		app.detectShake();
 	}
 	this.frame_313 = function() {
+		$('.resultLinks').show();
 		this.gotoAndPlay(185);
 	}
 	this.frame_337 = function() {
@@ -1151,7 +1155,7 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(6).call(this.frame_6).wait(1).call(this.frame_7).wait(21).call(this.frame_28).wait(1).call(this.frame_29).wait(21).call(this.frame_50).wait(263).call(this.frame_313).wait(24).call(this.frame_337).wait(25).call(this.frame_362).wait(25).call(this.frame_387).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).wait(6).call(this.frame_6).wait(22).call(this.frame_28).wait(1).call(this.frame_29).wait(21).call(this.frame_50).wait(1).call(this.frame_51).wait(48).call(this.frame_99).wait(214).call(this.frame_313).wait(24).call(this.frame_337).wait(25).call(this.frame_362).wait(25).call(this.frame_387).wait(1));
 
 	// juiceMerge
 	this.instance = new lib.mix0001();
