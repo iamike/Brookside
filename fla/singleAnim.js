@@ -1083,13 +1083,14 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 	this.initialize(mode,startPosition,loop,{showResult1:313,"showResult1":314,showResult2:338,showResult3:363});
 
 	// timeline functions:
-	this.frame_19 = function() {
+	this.frame_20 = function() {
 		this.stop();
-		app.showSpot();
+		$("#spot").show();
 	}
 	this.frame_41 = function() {
 		this.stop();
-		app.showSwipeHint();
+		$("#swipeHint").show();
+		$("#spot").hide();
 	}
 	this.frame_313 = function() {
 		$('.resultLinks').show();
@@ -1107,7 +1108,7 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(19).call(this.frame_19).wait(22).call(this.frame_41).wait(272).call(this.frame_313).wait(24).call(this.frame_337).wait(25).call(this.frame_362).wait(25).call(this.frame_387).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).wait(20).call(this.frame_20).wait(21).call(this.frame_41).wait(272).call(this.frame_313).wait(24).call(this.frame_337).wait(25).call(this.frame_362).wait(25).call(this.frame_387).wait(1));
 
 	// chocolate
 	this.instance = new lib.Choco_one_00092();

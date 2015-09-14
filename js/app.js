@@ -20,13 +20,6 @@ var app = {
             top: -(height - domheight) / 2
         });
     },
-    //single
-    showSpot: function() {
-        $('#spot').fadeIn();
-    },
-    showSwipeHint: function() {
-        $('#swipeHint').fadeIn();
-    },
     showResult: function() {
 
     },
