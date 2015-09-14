@@ -1,3 +1,5 @@
 *.fla
 *.psd
 /node_modules
+/html
+/testShake
