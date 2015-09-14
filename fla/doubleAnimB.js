@@ -1215,6 +1215,8 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 		app.detectShake();
 	}
 	this.frame_346 = function() {
+		$('.resultLinks').show();
+		$('.option').hide();
 		this.gotoAndPlay(272);
 	}
 	this.frame_370 = function() {

@@ -1092,6 +1092,8 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 		app.showSwipeHint();
 	}
 	this.frame_313 = function() {
+		$('.resultLinks').show();
+		$('.option').hide();
 		this.gotoAndPlay(166);
 	}
 	this.frame_337 = function() {
