@@ -203,7 +203,6 @@ a.red:hover{ text-decoration: underline; color:#ff5656;}
 #option2 {left: 149px;top: 303px;}
 #option3 {left: 215px;top: 342px;}
 
-#coupon, #shopLink { display: block; width:200px; height: 25px; position: absolute; z-index: 99999; background-color: black; }
 
 .stepEl {display: none;}
 #QRcode {
@@ -213,4 +212,26 @@ a.red:hover{ text-decoration: underline; color:#ff5656;}
     width: 154px;
     height: 154px;
     z-index: 9999;
+}
+#getCoupon,
+#shopLink {
+    width: 200px;
+    height: 25px;
+    position: absolute;
+    z-index: 99999;
+   /* background-color: black;*/
+    width: 100px;
+    height: 50px;
+    left: 109px;
+    top: 257px;
+}
+
+#shopLink {
+    top:397px;
+
+
+
+}
+.resultLinks{
+    display: none;
 }

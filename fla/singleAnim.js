@@ -1096,7 +1096,6 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 	}
 	this.frame_337 = function() {
 		this.stop();
-		app.showResult();
 	}
 	this.frame_362 = function() {
 		this.stop();

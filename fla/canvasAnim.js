@@ -9,19 +9,19 @@ lib.properties = {
 	fps: 25,
 	color: "#FFFFFF",
 	manifest: [
-		{src:"images/arrow.png", id:"arrow"},
-		{src:"images/bg.jpg", id:"bg"},
-		{src:"images/bg_sence.jpg", id:"bg_sence"},
-		{src:"images/c1.png", id:"c1"},
-		{src:"images/c2.png", id:"c2"},
-		{src:"images/c3.png", id:"c3"},
-		{src:"images/chocolate.png", id:"chocolate"},
-		{src:"images/chocolateShadow.png", id:"chocolateShadow"},
-		{src:"images/hand.png", id:"hand"},
-		{src:"images/heading1.png", id:"heading1"},
-		{src:"images/heading2.png", id:"heading2"},
-		{src:"images/heading3.jpg", id:"heading3"},
-		{src:"images/senceInChocolate.png", id:"senceInChocolate"}
+		{src:"imagesStart/arrow.png", id:"arrow"},
+		{src:"imagesStart/bg.jpg", id:"bg"},
+		{src:"imagesStart/bg_sence.jpg", id:"bg_sence"},
+		{src:"imagesStart/c1.png", id:"c1"},
+		{src:"imagesStart/c2.png", id:"c2"},
+		{src:"imagesStart/c3.png", id:"c3"},
+		{src:"imagesStart/chocolate.png", id:"chocolate"},
+		{src:"imagesStart/chocolateShadow.png", id:"chocolateShadow"},
+		{src:"imagesStart/hand.png", id:"hand"},
+		{src:"imagesStart/heading1.png", id:"heading1"},
+		{src:"imagesStart/heading2.png", id:"heading2"},
+		{src:"imagesStart/heading3.jpg", id:"heading3"},
+		{src:"imagesStart/senceInChocolate.png", id:"senceInChocolate"}
 	]
 };
 
