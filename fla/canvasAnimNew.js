@@ -20,8 +20,6 @@ lib.properties = {
 		{src:"imagesStartNew/c5.png", id:"c5"},
 		{src:"imagesStartNew/c6.png", id:"c6"},
 		{src:"imagesStartNew/c7.png", id:"c7"},
-		{src:"imagesStartNew/c8.png", id:"c8"},
-		{src:"imagesStartNew/c9.png", id:"c9"},
 		{src:"imagesStartNew/d1.png", id:"d1"},
 		{src:"imagesStartNew/d2.png", id:"d2"},
 		{src:"imagesStartNew/d3.png", id:"d3"},
@@ -99,18 +97,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,237,127);
 	this.initialize(img.c7);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,243,203);
-
-
-(lib.c8 = function() {
-	this.initialize(img.c8);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,206,201);
-
-
-(lib.c9 = function() {
-	this.initialize(img.c9);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,317,420);
 
 
 (lib.d1 = function() {
@@ -284,28 +270,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,146.9,34.3);
 p.nominalBounds = new cjs.Rectangle(0,0,237,400);
 
 
-(lib.s8_1 = function() {
-	this.initialize();
-
-	// 图层 1
-	this.instance_1 = new lib.c8();
-
-	this.addChild(this.instance_1);
-}).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(0,0,206,201);
-
-
-(lib.s7 = function() {
-	this.initialize();
-
-	// 图层 1
-	this.instance = new lib.c9();
-
-	this.addChild(this.instance);
-}).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(0,0,317,420);
-
-
 (lib.s6_1 = function() {
 	this.initialize();
 
@@ -467,40 +431,26 @@ p.nominalBounds = new cjs.Rectangle(0,0,120,33.4);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(106).to({_off:false},0).to({scaleX:3.09,scaleY:3.09,rotation:13.5,x:287.7,y:684.2,alpha:0},13,cjs.Ease.get(1)).to({_off:true},1).wait(41));
 
-	// c8.png
-	this.instance_1 = new lib.s8_1("synched",0);
-	this.instance_1.setTransform(646.5,-37.2,1.044,1.044,0,0,0,103,100.5);
+	// c10.png
+	this.instance_1 = new lib.s6_1("synched",0);
+	this.instance_1.setTransform(349.6,599.7,0.293,0.293,0,0,0,93.2,83.2);
 	this.instance_1._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(141).to({_off:false},0).to({regY:100.4,x:580.5,y:46.5},4).to({regY:100.5,x:565.8,y:65.1},10,cjs.Ease.get(1)).wait(6));
-
-	// c9.png
-	this.instance_2 = new lib.s7("synched",0);
-	this.instance_2.setTransform(-82,-40.8,1.018,1.018,0,0,0,158.6,210.1);
-	this.instance_2._off = true;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(141).to({_off:false},0).to({regX:158.5,regY:209.9,x:54.3,y:97.3},4).to({regY:210,x:84.6,y:128.2},10,cjs.Ease.get(1)).wait(6));
-
-	// c10.png
-	this.instance_3 = new lib.s6_1("synched",0);
-	this.instance_3.setTransform(349.6,599.7,0.293,0.293,0,0,0,93.2,83.2);
-	this.instance_3._off = true;
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(106).to({_off:false},0).to({regX:93,regY:83.4,scaleX:0.84,scaleY:0.84,x:366.2,y:526.2},13,cjs.Ease.get(1)).to({regX:92.5,regY:83.5,scaleX:0.97,scaleY:0.97,x:368.2,y:531.7},13).wait(2).to({startPosition:0},0).to({scaleX:6.31,scaleY:6.31,x:620.6,y:-37.1},5).to({regY:83.6,scaleX:7.28,scaleY:7.28,x:666.5,y:-140.4},10,cjs.Ease.get(1)).wait(12));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(106).to({_off:false},0).to({regX:93,regY:83.4,scaleX:0.84,scaleY:0.84,x:366.2,y:526.2},13,cjs.Ease.get(1)).to({regX:92.5,regY:83.5,scaleX:0.97,scaleY:0.97,x:368.2,y:531.7},13).wait(2).to({startPosition:0},0).to({scaleX:6.31,scaleY:6.31,x:620.6,y:-37.1},5).to({regY:83.6,scaleX:7.28,scaleY:7.28,x:666.5,y:-140.4},10,cjs.Ease.get(1)).wait(12));
 
 	// 图层 27
-	this.instance_4 = new lib.s5_1("synched",0);
-	this.instance_4.setTransform(220.7,719.4,0.28,0.28,0,0,0,76.8,86);
-	this.instance_4._off = true;
+	this.instance_2 = new lib.s5_1("synched",0);
+	this.instance_2.setTransform(220.7,719.4,0.28,0.28,0,0,0,76.8,86);
+	this.instance_2._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(106).to({_off:false},0).to({regX:76.7,regY:85.9,scaleX:0.69,scaleY:0.69,x:183,y:688.8},13,cjs.Ease.get(1)).to({regX:77.5,regY:86.5,scaleX:0.93,scaleY:0.93,x:185.2,y:693.4},13).wait(2).to({startPosition:0},0).to({scaleX:2.42,scaleY:2.42,x:98.8,y:1010.2},5).to({scaleX:2.69,scaleY:2.69,x:83.2,y:1067.8},10,cjs.Ease.get(1)).wait(12));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(106).to({_off:false},0).to({regX:76.7,regY:85.9,scaleX:0.69,scaleY:0.69,x:183,y:688.8},13,cjs.Ease.get(1)).to({regX:77.5,regY:86.5,scaleX:0.93,scaleY:0.93,x:185.2,y:693.4},13).wait(2).to({startPosition:0},0).to({scaleX:2.42,scaleY:2.42,x:98.8,y:1010.2},5).to({scaleX:2.69,scaleY:2.69,x:-133.1,y:1284.1},10,cjs.Ease.get(1)).wait(12));
 
 	// 图层 28
-	this.instance_5 = new lib.s3("synched",0);
-	this.instance_5.setTransform(305.6,665.7,1.466,1.466,0,0,0,112.4,89.5);
-	this.instance_5._off = true;
+	this.instance_3 = new lib.s3("synched",0);
+	this.instance_3.setTransform(305.6,665.7,1.466,1.466,0,0,0,112.4,89.5);
+	this.instance_3._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(106).to({_off:false},0).to({regX:112.5,scaleX:2.16,scaleY:2.16,x:297.1,y:602.8},13,cjs.Ease.get(1)).wait(15).to({startPosition:0},0).to({scaleX:9.89,scaleY:9.89,x:378.8,y:543.6},7).to({scaleX:11.29,scaleY:11.29,x:393.6,y:532.6},8,cjs.Ease.get(1)).to({alpha:0},11).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(106).to({_off:false},0).to({regX:112.5,scaleX:2.16,scaleY:2.16,x:297.1,y:602.8},13,cjs.Ease.get(1)).wait(15).to({startPosition:0},0).to({scaleX:9.89,scaleY:9.89,x:378.8,y:543.6},7).to({scaleX:11.29,scaleY:11.29,x:393.6,y:532.6},8,cjs.Ease.get(1)).to({alpha:0},11).wait(1));
 
 	// 图层 29 (mask)
 	var mask = new cjs.Shape();
@@ -539,97 +489,97 @@ p.nominalBounds = new cjs.Rectangle(0,0,120,33.4);
 	this.timeline.addTween(cjs.Tween.get(mask).to({graphics:null,x:0,y:0}).wait(106).to({graphics:mask_graphics_106,x:291.8,y:669.4}).wait(1).to({graphics:mask_graphics_107,x:289.6,y:660.3}).wait(1).to({graphics:mask_graphics_108,x:287.6,y:652}).wait(1).to({graphics:mask_graphics_109,x:285.8,y:644.4}).wait(1).to({graphics:mask_graphics_110,x:284.2,y:637.4}).wait(1).to({graphics:mask_graphics_111,x:282.7,y:631.3}).wait(1).to({graphics:mask_graphics_112,x:281.4,y:625.8}).wait(1).to({graphics:mask_graphics_113,x:280.3,y:621.1}).wait(1).to({graphics:mask_graphics_114,x:279.3,y:617.1}).wait(1).to({graphics:mask_graphics_115,x:278.6,y:613.9}).wait(1).to({graphics:mask_graphics_116,x:278,y:611.3}).wait(1).to({graphics:mask_graphics_117,x:277.5,y:609.5}).wait(1).to({graphics:mask_graphics_118,x:277.3,y:608.4}).wait(1).to({graphics:mask_graphics_119,x:277.2,y:608.1}).wait(15).to({graphics:mask_graphics_134,x:277.2,y:608.1}).wait(1).to({graphics:mask_graphics_135,x:281.8,y:600.6}).wait(1).to({graphics:mask_graphics_136,x:286.4,y:593.1}).wait(1).to({graphics:mask_graphics_137,x:290.9,y:585.6}).wait(1).to({graphics:mask_graphics_138,x:295.5,y:578.1}).wait(1).to({graphics:mask_graphics_139,x:300.1,y:570.7}).wait(1).to({graphics:mask_graphics_140,x:304.7,y:563.2}).wait(1).to({graphics:mask_graphics_141,x:309.2,y:555.7}).wait(1).to({graphics:mask_graphics_142,x:310.6,y:553.5}).wait(1).to({graphics:mask_graphics_143,x:311.8,y:551.6}).wait(1).to({graphics:mask_graphics_144,x:312.8,y:549.9}).wait(1).to({graphics:mask_graphics_145,x:313.6,y:548.6}).wait(1).to({graphics:mask_graphics_146,x:314.2,y:547.6}).wait(1).to({graphics:mask_graphics_147,x:314.7,y:546.8}).wait(1).to({graphics:mask_graphics_148,x:314.9,y:546.4}).wait(1).to({graphics:mask_graphics_149,x:315,y:546.2}).wait(1).to({graphics:null,x:0,y:0}).wait(11));
 
 	// c7.png
-	this.instance_6 = new lib.s9("synched",0);
-	this.instance_6.setTransform(370.3,751.8,0.33,0.33,0,0,0,121.1,101.2);
-	this.instance_6._off = true;
+	this.instance_4 = new lib.s9("synched",0);
+	this.instance_4.setTransform(370.3,751.8,0.33,0.33,0,0,0,121.1,101.2);
+	this.instance_4._off = true;
 
-	this.instance_6.mask = mask;
+	this.instance_4.mask = mask;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(106).to({_off:false},0).to({regX:121.5,regY:101.3,scaleX:0.48,scaleY:0.48,x:357.3,y:693.6},13,cjs.Ease.get(1)).wait(15).to({startPosition:0},0).to({regX:121.4,regY:101.5,scaleX:1.03,scaleY:1.03,x:529.2,y:946.7},5).to({regX:121.5,regY:101.4,scaleX:1.13,scaleY:1.13,x:560.4,y:992.6},10,cjs.Ease.get(1)).wait(12));
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(106).to({_off:false},0).to({regX:121.5,regY:101.3,scaleX:0.48,scaleY:0.48,x:357.3,y:693.6},13,cjs.Ease.get(1)).wait(15).to({startPosition:0},0).to({regX:121.4,regY:101.5,scaleX:1.03,scaleY:1.03,x:529.2,y:946.7},5).to({regX:121.5,regY:101.4,scaleX:1.13,scaleY:1.13,x:748.7,y:1187.8},10,cjs.Ease.get(1)).wait(12));
 
 	// 图层 31
-	this.instance_7 = new lib.s4("synched",0);
-	this.instance_7.setTransform(292.4,608.8,0.971,0.971,0,0,0,118,199.6);
-	this.instance_7._off = true;
+	this.instance_5 = new lib.s4("synched",0);
+	this.instance_5.setTransform(292.4,608.8,0.971,0.971,0,0,0,118,199.6);
+	this.instance_5._off = true;
 
-	this.instance_7.mask = mask;
+	this.instance_5.mask = mask;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(106).to({_off:false},0).to({regX:118.5,regY:200,scaleX:1.4,scaleY:1.4,x:278.4,y:521.3},13,cjs.Ease.get(1)).to({startPosition:0},13).to({scaleX:2.49,scaleY:2.49,x:311.1,y:533.6},3).to({scaleX:2.69,scaleY:2.69,x:317,y:535.8},6,cjs.Ease.get(1)).wait(20));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(106).to({_off:false},0).to({regX:118.5,regY:200,scaleX:1.4,scaleY:1.4,x:278.4,y:521.3},13,cjs.Ease.get(1)).to({startPosition:0},13).to({scaleX:2.49,scaleY:2.49,x:311.1,y:533.6},3).to({scaleX:2.69,scaleY:2.69,x:317,y:535.8},6,cjs.Ease.get(1)).wait(20));
 
 	// b4.png
-	this.instance_8 = new lib.s1("synched",0);
-	this.instance_8.setTransform(317.6,657.8,3.205,3.205,0,0,0,55.6,47.5);
-	this.instance_8._off = true;
+	this.instance_6 = new lib.s1("synched",0);
+	this.instance_6.setTransform(317.6,657.8,3.205,3.205,0,0,0,55.6,47.5);
+	this.instance_6._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(106).to({_off:false},0).to({scaleX:4.12,scaleY:4.12,x:298,y:581},13,cjs.Ease.get(1)).to({regX:55.5,scaleX:4.19,scaleY:4.19,x:297.7,y:580.7},13,cjs.Ease.get(1)).wait(2).to({startPosition:0},0).to({scaleX:18.08,scaleY:18.08,x:328.3,y:476.3},7).to({scaleX:20.61,scaleY:20.61,x:333.5,y:457.3},8,cjs.Ease.get(1)).wait(12));
+	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(106).to({_off:false},0).to({scaleX:4.12,scaleY:4.12,x:298,y:581},13,cjs.Ease.get(1)).to({regX:55.5,scaleX:4.19,scaleY:4.19,x:297.7,y:580.7},13,cjs.Ease.get(1)).wait(2).to({startPosition:0},0).to({scaleX:18.08,scaleY:18.08,x:328.3,y:476.3},7).to({scaleX:20.61,scaleY:20.61,x:333.5,y:457.3},8,cjs.Ease.get(1)).wait(12));
 
 	// c6.png
-	this.instance_9 = new lib.s2("synched",0);
-	this.instance_9.setTransform(323.6,747,1.944,1.944,0,0,0,118.5,63.5);
-	this.instance_9._off = true;
+	this.instance_7 = new lib.s2("synched",0);
+	this.instance_7.setTransform(323.6,747,1.944,1.944,0,0,0,118.5,63.5);
+	this.instance_7._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(106).to({_off:false},0).to({scaleX:2.71,scaleY:2.71,x:314.5,y:693.7},13,cjs.Ease.get(1)).wait(13).to({startPosition:0},0).wait(2).to({startPosition:0},0).to({scaleX:11.71,scaleY:11.71,x:400.5,y:964.2},7).to({scaleX:13.34,scaleY:13.34,x:416.4,y:1013.6},8,cjs.Ease.get(1)).wait(12));
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(106).to({_off:false},0).to({scaleX:2.71,scaleY:2.71,x:314.5,y:693.7},13,cjs.Ease.get(1)).wait(13).to({startPosition:0},0).wait(2).to({startPosition:0},0).to({scaleX:11.71,scaleY:11.71,x:400.5,y:964.2},7).to({scaleX:13.34,scaleY:13.34,x:416.4,y:1013.6},8,cjs.Ease.get(1)).wait(12));
 
 	// 图层 35
-	this.instance_10 = new lib.s15("synched",0);
-	this.instance_10.setTransform(700.6,808.6,1.35,1.35,-33,0,0,34.4,11.9);
-	this.instance_10._off = true;
+	this.instance_8 = new lib.s15("synched",0);
+	this.instance_8.setTransform(700.6,808.6,1.35,1.35,-33,0,0,34.4,11.9);
+	this.instance_8._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_10).wait(80).to({_off:false},0).wait(1).to({regX:62.2,regY:65.5,x:508.8,y:703.3},0).wait(1).to({x:399.7,y:642.9},0).wait(1).to({x:330.4,y:604.5},0).wait(1).to({x:282.8,y:578.1},0).wait(1).to({x:249.7,y:559.8},0).wait(1).to({x:227.1,y:547.3},0).wait(1).to({x:212.7,y:539.3},0).wait(1).to({x:204.8,y:534.9},0).wait(1).to({regX:34.4,regY:11.8,x:131.5,y:493.3},0).wait(4).to({regX:34.2,x:149.9,y:490},0).to({scaleX:1.35,scaleY:1.35,rotation:-30.8,x:218.1,y:463.9},3).to({scaleX:1.35,scaleY:1.35,rotation:-28.6,x:298.3,y:461.7},3).to({scaleX:1.35,scaleY:1.35,rotation:-26.5,x:363.7,y:477.4},3).to({regX:34.4,scaleX:1.35,scaleY:1.35,rotation:-24.5,x:413.1,y:513},3).to({_off:true},1).wait(55));
+	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(80).to({_off:false},0).wait(1).to({regX:62.2,regY:65.5,x:508.8,y:703.3},0).wait(1).to({x:399.7,y:642.9},0).wait(1).to({x:330.4,y:604.5},0).wait(1).to({x:282.8,y:578.1},0).wait(1).to({x:249.7,y:559.8},0).wait(1).to({x:227.1,y:547.3},0).wait(1).to({x:212.7,y:539.3},0).wait(1).to({x:204.8,y:534.9},0).wait(1).to({regX:34.4,regY:11.8,x:131.5,y:493.3},0).wait(4).to({regX:34.2,x:149.9,y:490},0).to({scaleX:1.35,scaleY:1.35,rotation:-30.8,x:218.1,y:463.9},3).to({scaleX:1.35,scaleY:1.35,rotation:-28.6,x:298.3,y:461.7},3).to({scaleX:1.35,scaleY:1.35,rotation:-26.5,x:363.7,y:477.4},3).to({regX:34.4,scaleX:1.35,scaleY:1.35,rotation:-24.5,x:413.1,y:513},3).to({_off:true},1).wait(55));
 
 	// a4.png
-	this.instance_11 = new lib.m3("synched",0);
-	this.instance_11.setTransform(318.5,668.7,2.688,2.688,0,0,0,52.5,68);
+	this.instance_9 = new lib.m3("synched",0);
+	this.instance_9.setTransform(318.5,668.7,2.688,2.688,0,0,0,52.5,68);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_11).to({_off:true},106).wait(55));
+	this.timeline.addTween(cjs.Tween.get(this.instance_9).to({_off:true},106).wait(55));
 
 	// 图层 1
-	this.instance_12 = new lib.s5("synched",0);
-	this.instance_12.setTransform(319,403.4,2.688,2.688,0,0,0,72.5,21);
+	this.instance_10 = new lib.s5("synched",0);
+	this.instance_10.setTransform(319,403.4,2.688,2.688,0,0,0,72.5,21);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_12).wait(4).to({startPosition:0},0).to({regY:21.1,scaleX:2.43,scaleY:2.43,y:403.5},2).to({regY:21,scaleX:2.69,scaleY:2.69,y:403.4},4).to({regY:21.1,scaleX:2.43,scaleY:2.43,y:403.5},2).to({regY:21,scaleX:2.69,scaleY:2.69,y:403.4},6,cjs.Ease.get(1)).wait(35).to({startPosition:0},0).to({regY:21.1,scaleX:2.43,scaleY:2.43,y:403.5},2).to({regY:21,scaleX:2.69,scaleY:2.69,y:403.4},4).to({regY:21.1,scaleX:2.43,scaleY:2.43,y:403.5},2).to({regY:21,scaleX:2.69,scaleY:2.69,y:403.4},6,cjs.Ease.get(1)).wait(38).to({startPosition:0},0).to({scaleX:2.18,scaleY:2.18,y:403.3,alpha:0},5).to({_off:true},1).wait(50));
+	this.timeline.addTween(cjs.Tween.get(this.instance_10).wait(4).to({startPosition:0},0).to({regY:21.1,scaleX:2.43,scaleY:2.43,y:403.5},2).to({regY:21,scaleX:2.69,scaleY:2.69,y:403.4},4).to({regY:21.1,scaleX:2.43,scaleY:2.43,y:403.5},2).to({regY:21,scaleX:2.69,scaleY:2.69,y:403.4},6,cjs.Ease.get(1)).wait(35).to({startPosition:0},0).to({regY:21.1,scaleX:2.43,scaleY:2.43,y:403.5},2).to({regY:21,scaleX:2.69,scaleY:2.69,y:403.4},4).to({regY:21.1,scaleX:2.43,scaleY:2.43,y:403.5},2).to({regY:21,scaleX:2.69,scaleY:2.69,y:403.4},6,cjs.Ease.get(1)).wait(38).to({startPosition:0},0).to({scaleX:2.18,scaleY:2.18,y:403.3,alpha:0},5).to({_off:true},1).wait(50));
 
 	// a2.png
-	this.instance_13 = new lib.m1("synched",0);
-	this.instance_13.setTransform(318.5,803.1,2.688,2.688,0,0,0,62,105);
+	this.instance_11 = new lib.m1("synched",0);
+	this.instance_11.setTransform(318.5,803.1,2.688,2.688,0,0,0,62,105);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_13).wait(24).to({startPosition:24},0).to({scaleX:2.69,scaleY:2.69,rotation:-5,x:318.6,startPosition:34},4,cjs.Ease.get(1)).wait(3).to({startPosition:37},0).to({regX:61.9,scaleX:2.69,scaleY:2.69,rotation:5.7,x:318.7,startPosition:41},3).to({regY:104.9,rotation:-4.4,x:318.5,y:802.8,startPosition:46},4).to({regY:105,rotation:0,x:318.4,y:803.1,startPosition:53},6,cjs.Ease.get(1)).wait(29).to({regX:62,x:318.5,startPosition:24},0).to({scaleX:2.69,scaleY:2.69,rotation:-5,x:318.6,startPosition:34},4,cjs.Ease.get(1)).wait(3).to({startPosition:37},0).to({regX:61.9,scaleX:2.69,scaleY:2.69,rotation:5.7,x:318.7,startPosition:41},3).to({regY:104.9,rotation:-4.4,x:318.5,y:802.8,startPosition:46},4).to({regY:105,rotation:0,x:318.4,y:803.1,startPosition:53},6,cjs.Ease.get(1)).to({_off:true},13).wait(55));
+	this.timeline.addTween(cjs.Tween.get(this.instance_11).wait(24).to({startPosition:24},0).to({scaleX:2.69,scaleY:2.69,rotation:-5,x:318.6,startPosition:34},4,cjs.Ease.get(1)).wait(3).to({startPosition:37},0).to({regX:61.9,scaleX:2.69,scaleY:2.69,rotation:5.7,x:318.7,startPosition:41},3).to({regY:104.9,rotation:-4.4,x:318.5,y:802.8,startPosition:46},4).to({regY:105,rotation:0,x:318.4,y:803.1,startPosition:53},6,cjs.Ease.get(1)).wait(29).to({regX:62,x:318.5,startPosition:24},0).to({scaleX:2.69,scaleY:2.69,rotation:-5,x:318.6,startPosition:34},4,cjs.Ease.get(1)).wait(3).to({startPosition:37},0).to({regX:61.9,scaleX:2.69,scaleY:2.69,rotation:5.7,x:318.7,startPosition:41},3).to({regY:104.9,rotation:-4.4,x:318.5,y:802.8,startPosition:46},4).to({regY:105,rotation:0,x:318.4,y:803.1,startPosition:53},6,cjs.Ease.get(1)).to({_off:true},13).wait(55));
 
 	// a3.png
-	this.instance_14 = new lib.m2();
-	this.instance_14.setTransform(306.4,793.5,2.688,2.688,0,0,0,104.5,33.5);
+	this.instance_12 = new lib.m2();
+	this.instance_12.setTransform(306.4,793.5,2.688,2.688,0,0,0,104.5,33.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_14).wait(24).to({x:292.9},4,cjs.Ease.get(1)).wait(3).to({x:319.8},3).to({x:299.6},4).to({x:306.4},6,cjs.Ease.get(1)).wait(29).to({x:292.9},4,cjs.Ease.get(1)).wait(3).to({x:319.8},3).to({x:299.6},4).to({x:306.4},6,cjs.Ease.get(1)).to({_off:true},13).wait(55));
+	this.timeline.addTween(cjs.Tween.get(this.instance_12).wait(24).to({x:292.9},4,cjs.Ease.get(1)).wait(3).to({x:319.8},3).to({x:299.6},4).to({x:306.4},6,cjs.Ease.get(1)).wait(29).to({x:292.9},4,cjs.Ease.get(1)).wait(3).to({x:319.8},3).to({x:299.6},4).to({x:306.4},6,cjs.Ease.get(1)).to({_off:true},13).wait(55));
 
 	// d1.png
-	this.instance_15 = new lib.s11("synched",0);
-	this.instance_15.setTransform(325.2,275.6,2.688,2.688,0,0,0,84,14.5);
+	this.instance_13 = new lib.s11("synched",0);
+	this.instance_13.setTransform(325.2,275.6,2.688,2.688,0,0,0,84,14.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_15).wait(105).to({startPosition:0},0).to({scaleX:2.27,scaleY:2.27,x:325.1,y:275.7,alpha:0},5).to({_off:true},1).wait(50));
+	this.timeline.addTween(cjs.Tween.get(this.instance_13).wait(105).to({startPosition:0},0).to({scaleX:2.27,scaleY:2.27,x:325.1,y:275.7,alpha:0},5).to({_off:true},1).wait(50));
 
 	// d2.png
-	this.instance_16 = new lib.s12("synched",0);
-	this.instance_16.setTransform(109,489.4,2.688,2.688,0,0,0,23.6,14);
+	this.instance_14 = new lib.s12("synched",0);
+	this.instance_14.setTransform(109,489.4,2.688,2.688,0,0,0,23.6,14);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_16).wait(105).to({startPosition:0},0).to({regX:23.5,x:60.9,y:422.2,alpha:0},5).to({_off:true},1).wait(50));
+	this.timeline.addTween(cjs.Tween.get(this.instance_14).wait(105).to({startPosition:0},0).to({regX:23.5,x:60.9,y:422.2,alpha:0},5).to({_off:true},1).wait(50));
 
 	// d3.png
-	this.instance_17 = new lib.s13("synched",0);
-	this.instance_17.setTransform(555.1,551.2,2.688,2.688,0,0,0,32.5,23);
+	this.instance_15 = new lib.s13("synched",0);
+	this.instance_15.setTransform(555.1,551.2,2.688,2.688,0,0,0,32.5,23);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_17).wait(105).to({startPosition:0},0).to({x:674.8,y:489.4,alpha:0},5).to({_off:true},1).wait(50));
+	this.timeline.addTween(cjs.Tween.get(this.instance_15).wait(105).to({startPosition:0},0).to({x:674.8,y:489.4,alpha:0},5).to({_off:true},1).wait(50));
 
 	// d4.png
-	this.instance_18 = new lib.s14("synched",0);
-	this.instance_18.setTransform(616.9,681.8,2.688,2.688,0,0,0,28.5,26.6);
+	this.instance_16 = new lib.s14("synched",0);
+	this.instance_16.setTransform(616.9,681.8,2.688,2.688,0,0,0,28.5,26.6);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_18).wait(105).to({startPosition:0},0).to({regX:28.6,x:695.1,y:684.5,alpha:0},5).to({_off:true},1).wait(50));
+	this.timeline.addTween(cjs.Tween.get(this.instance_16).wait(105).to({startPosition:0},0).to({regX:28.6,x:695.1,y:684.5,alpha:0},5).to({_off:true},1).wait(50));
 
 	// 图层 5
-	this.instance_19 = new lib.s10("synched",0);
-	this.instance_19.setTransform(321.1,539.8,2.688,2.688,0,0,0,118.5,200);
+	this.instance_17 = new lib.s10("synched",0);
+	this.instance_17.setTransform(321.1,539.8,2.688,2.688,0,0,0,118.5,200);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_19).wait(161));
+	this.timeline.addTween(cjs.Tween.get(this.instance_17).wait(161));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(322.5,541.1,691.1,1075.4);
