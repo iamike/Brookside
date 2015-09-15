@@ -1162,7 +1162,7 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 	this.instance_23._off = true;
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},42).to({state:[{t:this.instance_1}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_3}]},1).to({state:[{t:this.instance_4}]},1).to({state:[{t:this.instance_5}]},1).to({state:[{t:this.instance_6}]},1).to({state:[{t:this.instance_7}]},1).to({state:[{t:this.instance_8}]},1).to({state:[{t:this.instance_9}]},1).to({state:[{t:this.instance_10}]},1).to({state:[{t:this.instance_11}]},1).to({state:[{t:this.instance_12}]},1).to({state:[{t:this.instance_13}]},1).to({state:[{t:this.instance_14}]},1).to({state:[{t:this.instance_15}]},1).to({state:[{t:this.instance_16}]},1).to({state:[{t:this.instance_17}]},1).to({state:[{t:this.instance_18}]},1).to({state:[{t:this.instance_19}]},1).to({state:[{t:this.instance_20}]},1).to({state:[{t:this.instance_21}]},1).to({state:[{t:this.instance_22}]},1).to({state:[{t:this.instance_23}]},1).to({state:[{t:this.instance_23}]},9).to({state:[]},8).wait(306));
-	this.timeline.addTween(cjs.Tween.get(this.instance_23).wait(65).to({_off:false},0).to({scaleX:0.53,scaleY:0.43,x:332,y:608.9},9).to({_off:true},8).wait(306));
+	this.timeline.addTween(cjs.Tween.get(this.instance_23).wait(65).to({_off:false},0).to({regY:539.1,scaleX:0.53,scaleY:0.43,x:333,y:624.9},9).to({_off:true},8).wait(306));
 
 	// juice
 	this.instance_24 = new lib.Juice_one_00001();
