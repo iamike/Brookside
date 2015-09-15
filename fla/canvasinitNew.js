@@ -1,4 +1,4 @@
-var canvas, stage, exportRoot;
+var canvas, stage, exportRoot; 
 
 function init() {
     canvas = document.getElementById("canvas");
