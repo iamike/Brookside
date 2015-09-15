@@ -176,7 +176,7 @@ a,img,canvas { -webkit-user-select: none !important; }
 
 #modeSelector {
     display: none;
-    position: absolute; width: 255px; height: 151px; left: 50%; top:200px;  margin-left: -125px;
+    position: absolute; width: 255px; height: 151px; left: 50%; top:145px;  margin-left: -125px;
 }
 #mode1,#mode2 {display: none;}
 
