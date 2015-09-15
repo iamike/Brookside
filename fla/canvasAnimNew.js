@@ -13,7 +13,6 @@ lib.properties = {
 		{src:"imagesStartNew/a3.png", id:"a3"},
 		{src:"imagesStartNew/a4.png", id:"a4"},
 		{src:"imagesStartNew/a6.png", id:"a6"},
-		{src:"imagesStartNew/b4.png", id:"b4"},
 		{src:"imagesStartNew/c1.jpg", id:"c1"},
 		{src:"imagesStartNew/c10.png", id:"c10"},
 		{src:"imagesStartNew/c3.jpg", id:"c3"},
@@ -58,12 +57,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,317,86);
 	this.initialize(img.a6);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,360,84);
-
-
-(lib.b4 = function() {
-	this.initialize(img.b4);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,111,95);
 
 
 (lib.c1 = function() {
@@ -362,11 +355,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,237,127);
 	this.initialize();
 
 	// 图层 1
-	this.instance = new lib.b4();
+	this.instance = new lib.a21();
+	this.instance.setTransform(4.3,10.5,0.379,0.379);
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(0,0,111,95);
+p.nominalBounds = new cjs.Rectangle(4.3,10.5,94.7,80.3);
 
 
 (lib.m2 = function() {
@@ -410,7 +404,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,124.5,105.5);
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(4,23.2,111.2,85.6);
+p.nominalBounds = new cjs.Rectangle(5.1,23.2,110.2,85);
 
 
 (lib.m3 = function(mode,startPosition,loop) {
