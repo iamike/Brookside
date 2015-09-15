@@ -53,7 +53,7 @@ var app = {
 
 
 //creatjs touch event
-createjs.Touch.enable(stage, true, false);
+//createjs.Touch.enable(stage, true, false);
 
 //init the canvas animation when it ready.
 init();
