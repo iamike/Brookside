@@ -55,12 +55,36 @@ module.exports = function(grunt) {
             },
         },
         imagemin: {
-            dynamic: {
+            start: {
                 files: [{
                     expand: true,
-                    cwd: 'images/',
+                    cwd: 'fla/imagesStartNew',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'images/build/'
+                    dest: 'imagesStartNew/'
+                }]
+            },
+            single:{
+                files: [{
+                    expand: true,
+                    cwd: 'fla/imagesSingle',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: 'imagesSingle/'
+                }]
+            },
+            doubleA:{
+                files: [{
+                    expand: true,
+                    cwd: 'fla/imagesDoubleA',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: 'imagesDoubleA/'
+                }]
+            },
+            doubleB:{
+                files: [{
+                    expand: true,
+                    cwd: 'fla/imagesDoubleB',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: 'imagesDoubleB'
                 }]
             }
         }
