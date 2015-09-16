@@ -20,6 +20,7 @@ var app = {
             top: -(height - domheight) / 2
         });
     },
+
     showResult: function() {
 
     },
@@ -81,9 +82,13 @@ $("#start").swipe({
 $("#spot").swipe({
     tap: function(event, target) {
         exportRoot.gotoAndPlay();
+
+        console.log('test');
     },
     threshold: 150
 });
+
+
 $('#swipeHint').swipe({
     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
         exportRoot.gotoAndPlay();

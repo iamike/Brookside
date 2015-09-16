@@ -6,14 +6,14 @@ var p; // shortcut to reference prototypes
 lib.properties = {
 	width: 640,
 	height: 1078,
-	fps: 20,
+	fps: 16,
 	color: "#FFFFFF",
 	manifest: [
 		{src:"imagesStartNew/a21.png", id:"a21"},
 		{src:"imagesStartNew/a3.png", id:"a3"},
 		{src:"imagesStartNew/a4.png", id:"a4"},
 		{src:"imagesStartNew/a6.png", id:"a6"},
-		{src:"imagesStartNew/c1.jpg", id:"c1"},
+		{src:"imagesStartNew/c1.png", id:"c1"},
 		{src:"imagesStartNew/c10.png", id:"c10"},
 		{src:"imagesStartNew/c3.jpg", id:"c3"},
 		{src:"imagesStartNew/c4.png", id:"c4"},
@@ -128,7 +128,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,57,53);
 
 	// 图层 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#000000").ss(2,1,1).p("ACRgYQAAgDACgFQAAgPAEgLQAIgWAZgCQAdgBALArQAFAWAAATIAABcQAAAfgGAZQgIApgZAZQgYAageAAIkFAAQgigdgRgQQgfgdgJgWQgrhqBtg4IAAidQgBgQAGgRQANghAlAAQAlAAAJAjQAFARgDASIAACIQABgNAFgMQAMgiAjAAQAlAAAJAjQABADABADQADAPgDAPIAABaAA2g0QABgEABgDQAMgiAhAAQAhAAAJAjQAEARgCARIAAABQgBAAAAABIAABaAgvBEIAAheQAAgEAAgEAiWBEIAAhV");
+	this.shape.graphics.f().s("#000000").ss(2,1,1).p("ACRgYQAAgDACgFQAAgPAEgLQAIgWAZgCQAdgBALArQAFAWAAATIAABcQAAAfgGAZQgIApgZAZQgYAageAAIkFAAQgigdgRgQQgfgdgJgWQgrhqBtg4IAAidQgBgQAGgRQANghAlAAQAlAAAJAjQAFARgDASIAACIQABgNAFgMQAMgiAjAAQAlAAAJAjQABADABADQADAPgDAPIAABaAA2g0QABgEABgDQAMgiAhAAQAhAAAJAjQAEARgCARIAAABQgBAAAAABIAABaAiWBEIAAhVAgvBEIAAheQAAgEAAgE");
 	this.shape.setTransform(62.2,65.5);
 
 	this.shape_1 = new cjs.Shape();
