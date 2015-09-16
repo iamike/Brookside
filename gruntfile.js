@@ -46,6 +46,9 @@ module.exports = function(grunt) {
                 dest: 'js/build/double.js'
             },
             distDoubleB: {
+                options: { // Target options
+                    optimizationLevel: 5
+                },
                 src: [
                     'fla/doubleAnimB.js',
                     'fla/doubleInitB.js',
@@ -63,7 +66,7 @@ module.exports = function(grunt) {
                     dest: 'imagesStartNew/'
                 }]
             },
-            single:{
+            single: {
                 files: [{
                     expand: true,
                     cwd: 'fla/imagesSingle',
@@ -71,7 +74,7 @@ module.exports = function(grunt) {
                     dest: 'imagesSingle/'
                 }]
             },
-            doubleA:{
+            doubleA: {
                 files: [{
                     expand: true,
                     cwd: 'fla/imagesDoubleA',
@@ -79,7 +82,7 @@ module.exports = function(grunt) {
                     dest: 'imagesDoubleA/'
                 }]
             },
-            doubleB:{
+            doubleB: {
                 files: [{
                     expand: true,
                     cwd: 'fla/imagesDoubleB',
@@ -97,6 +100,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat','imagemin']);
+    grunt.registerTask('default', ['concat', 'imagemin']);
 
 };
