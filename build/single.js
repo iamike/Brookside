@@ -801,7 +801,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,111,95);
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(0,0,124.1,21.7);
+p.nominalBounds = new cjs.Rectangle(0,0,211.9,21.7);
 
 
 (lib.a28 = function() {
@@ -1347,7 +1347,7 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 	this.instance_61.setTransform(-31.5,415.2,1.746,1.746,0,0,0,62.1,10.9);
 	this.instance_61._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_61).wait(153).to({_off:false},0).to({x:321.9},10,cjs.Ease.get(1)).to({_off:true},151).wait(74));
+	this.timeline.addTween(cjs.Tween.get(this.instance_61).wait(153).to({_off:false},0).to({x:247.5,y:418},10,cjs.Ease.get(1)).to({_off:true},151).wait(74));
 
 	// 元件 28
 	this.instance_62 = new lib.a28("synched",0);
@@ -1676,6 +1676,8 @@ createjs.Touch.enable(stage, true, false);
 init();
 
 //make screen viewport center
+window.addEventListener('touchmove', function (e) { e.preventDefault();e.stopPropagation(); }, false);
+window.addEventListener('dblclick', function (e) { e.preventDefault();e.stopPropagation(); }, false);
 
 //global parts
 $('.option').swipe({
@@ -1724,7 +1726,7 @@ $("#QRcode").swipe({
 $("#drawCircle").swipe({
     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
 
-        console.log('test');
+        //console.log('test');
         exportRoot.gotoAndPlay();
 
     },

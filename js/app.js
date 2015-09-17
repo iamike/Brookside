@@ -61,6 +61,8 @@ createjs.Touch.enable(stage, true, false);
 init();
 
 //make screen viewport center
+window.addEventListener('touchmove', function (e) { e.preventDefault();e.stopPropagation(); }, false);
+window.addEventListener('dblclick', function (e) { e.preventDefault();e.stopPropagation(); }, false);
 
 //global parts
 $('.option').swipe({
@@ -109,7 +111,7 @@ $("#QRcode").swipe({
 $("#drawCircle").swipe({
     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
 
-        console.log('test');
+        //console.log('test');
         exportRoot.gotoAndPlay();
 
     },

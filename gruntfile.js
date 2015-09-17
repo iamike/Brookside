@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 
         concat: {
             // 2. Configuration for concatinating files goes here.
-            dist: {
+            libs: {
                 src: [
                     'js/libs/jquery.min.js',
                     'fla/libs/easeljs-0.8.1.min.js',
@@ -39,8 +39,8 @@ module.exports = function(grunt) {
             },
             distDoubleA: {
                 src: [
-                    'fla/doubleAnim.js',
-                    'fla/doubleInit.js',
+                    'fla/doubleAnimA.js',
+                    'fla/doubleInitA.js',
                     'js/app.js'
                 ],
                 dest: 'build/double.js'
@@ -154,7 +154,7 @@ module.exports = function(grunt) {
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     grunt.registerTask('default', ['clean:build', 'concat', /*'imagemin',*/ 'copy']);
-    grunt.registerTask('images', ['copy','clean:build','imagemin']);
+    grunt.registerTask('imagesDev', ['copy',/*'clean:build','imagemin'*/]);
 
 
 };
