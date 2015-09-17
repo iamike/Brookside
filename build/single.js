@@ -1667,6 +1667,7 @@ var app = {
 
 
 
+app.resize();
 
 //creatjs touch event
 createjs.Touch.enable(stage, true, false);
@@ -1675,7 +1676,6 @@ createjs.Touch.enable(stage, true, false);
 init();
 
 //make screen viewport center
-app.resize();
 
 //global parts
 $('.option').swipe({
