@@ -19,7 +19,7 @@ module.exports = function(grunt) {
                     'js/libs/lodash.min.js',
                     'js/libs/jquery.touchSwipe.min.js'
                 ],
-                dest: 'js/build/libs.js',
+                dest: 'build/libs.js',
             },
             distStart: {
                 src: [
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
                     'fla/canvasInitNew.js',
                     'js/app.js'
                 ],
-                dest: 'js/build/opening.js'
+                dest: 'build/opening.js'
             },
             distSingle: {
                 src: [
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
                     'fla/singleInit.js',
                     'js/app.js'
                 ],
-                dest: 'js/build/single.js'
+                dest: 'build/single.js'
             },
             distDoubleA: {
                 src: [
@@ -43,21 +43,19 @@ module.exports = function(grunt) {
                     'fla/doubleInit.js',
                     'js/app.js'
                 ],
-                dest: 'js/build/double.js'
+                dest: 'build/double.js'
             },
             distDoubleB: {
-                options: { // Target options
-                    optimizationLevel: 5
-                },
                 src: [
                     'fla/doubleAnimB.js',
                     'fla/doubleInitB.js',
                     'js/app.js'
                 ],
-                dest: 'js/build/doubleB.js'
+                dest: 'build/doubleB.js'
             },
         },
         imagemin: {
+            
             start: {
                 files: [{
                     expand: true,
@@ -90,6 +88,57 @@ module.exports = function(grunt) {
                     dest: 'imagesDoubleB'
                 }]
             }
+        },
+        clean: {
+            dev: {
+                src: ['fla/imagesStartNew', 'fla/imagesSingle', 'fla/imagesDoubleA', 'fla/imagesDoubleB']
+            },
+            build: {
+                src: ['js/build/*.{png,jpg,gif}', 'imagesStartNew/*.{png,jpg,gif}', 'imagesSingle/*.{png,jpg,gif}', 'imagesDoubleA/*.{png,jpg,gif}', 'imagesDoubleB/*.{png,jpg,gif}']
+            }
+        },
+        copy: {
+            main: {
+                files: [
+                    // includes files within path 
+                    {
+                        cwd: 'fla/',
+                        expand: true,
+                        flatten: true,
+                        src: ['imagesStartNew/*'],
+                        dest: './imagesStartNew/',
+                        filter: 'isFile'
+                    }, {
+                        cwd: 'fla/',
+                        expand: true,
+                        flatten: true,
+                        src: ['imagesSingle/*'],
+                        dest: './imagesSingle/',
+                        filter: 'isFile'
+                    }, {
+                        cwd: 'fla/',
+                        expand: true,
+                        flatten: true,
+                        src: ['imagesDoubleA/*'],
+                        dest: './imagesDoubleA/',
+                        filter: 'isFile'
+                    }, {
+                        cwd: 'fla/',
+                        expand: true,
+                        flatten: true,
+                        src: ['imagesDoubleB/*'],
+                        dest: './imagesDoubleB/',
+                        filter: 'isFile'
+                    }
+                ]
+            }
+        },
+        watch: {
+            scripts: {
+                files: ['fla/*.*'],
+                tasks: ['default']
+
+            }
         }
 
 
@@ -98,8 +147,14 @@ module.exports = function(grunt) {
     // 3. Where we tell Grunt we plan to use this plug-in.
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'imagemin']);
+    grunt.registerTask('default', ['clean:build', 'concat', /*'imagemin',*/ 'copy']);
+    grunt.registerTask('images', ['copy','clean:build','imagemin']);
+
 
 };

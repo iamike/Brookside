@@ -9,7 +9,7 @@ function init() {
     loader.addEventListener("fileload", handleFileLoad);
     loader.addEventListener("complete", handleComplete);
     loader.addEventListener("progress", handleProgress);
-    //loader.loadFile({src:"fla/images/canvasAnim_atlas_.json", type:"spritesheet", id:"canvasAnim_atlas_"}, true);
+    loader.loadFile({src:"imagesStartNew/canvasAnimNew_atlas_.json", type:"spritesheet", id:"canvasAnimNew_atlas_"}, true);
 
 
     loader.loadManifest(lib.properties.manifest);
@@ -23,7 +23,7 @@ function handleFileLoad(evt) {
 
 function handleComplete(evt) {
     var queue = evt.target;
-   // ss["canvasAnim_atlas_"] = queue.getResult("canvasAnim_atlas_");
+    ss["canvasAnimNew_atlas_"] = queue.getResult("canvasAnimNew_atlas_");
 
     exportRoot = new lib.canvasAnimNew();
 
