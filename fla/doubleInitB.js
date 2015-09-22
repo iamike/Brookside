@@ -52,14 +52,22 @@ function handleComplete(evt) {
     createjs.Ticker.addEventListener("tick", stage);
 
 
-
+    //alert('tst');
     //hide progress
     $('#loadBody').hide();
+    if (window.ws){
+        ws.send("scanComplete," + _strFromOpenID);
+
+    }
+
 
 }
 
 function handleProgress(evt) {
     var loaded = Math.floor(evt.loaded * 100);
     $(".progress").text(loaded + "%");
+    if (window.ws){
+        ws.send("scanLoading," + _strFromOpenID);
+    }
 
 }

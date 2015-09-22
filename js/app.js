@@ -51,69 +51,83 @@ var app = {
 };
 
 
+$(function() {
 
-app.resize();
 
-//creatjs touch event
-createjs.Touch.enable(stage, true, false);
+    app.resize();
 
-//init the canvas animation when it ready.
-init();
+    //creatjs touch event
+    createjs.Touch.enable(stage, true, false);
 
-//make screen viewport center
-window.addEventListener('touchmove', function (e) { e.preventDefault();e.stopPropagation(); }, false);
-window.addEventListener('dblclick', function (e) { e.preventDefault();e.stopPropagation(); }, false);
+    //init the canvas animation when it ready.
+    init();
 
-//global parts
-$('.option').swipe({
-    tap: function(event, target) {
-        console.log(target.id);
-        //exportRoot.gotoAndPlay("showResult1");
-    }
-})
-$("#start").swipe({
-    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-        exportRoot.gotoAndPlay("toSence");
-        $("#start").hide();
-    },
-    threshold: 150
+    //make screen viewport center
+    window.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+    }, false);
+    window.addEventListener('dblclick', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+    }, false);
+
+    //global parts
+    $('.option').swipe({
+            tap: function(event, target) {
+                console.log(target.id);
+                //exportRoot.gotoAndPlay("showResult1");
+            }
+        })
+        /*  */
+        $("#start").swipe({
+            swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+                exportRoot.gotoAndPlay("toSence");
+                $("#start").hide();
+            },
+            threshold: 150
+        });
+      
+
+
+
+    //Single Mode
+    $("#spot").swipe({
+        tap: function(event, target) {
+            exportRoot.gotoAndPlay();
+
+            //console.log('test');
+        },
+        threshold: 150
+    });
+
+
+    $('#swipeHint').swipe({
+        swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+            exportRoot.gotoAndPlay();
+            $('#swipeHint').hide();
+        },
+        threshold: 200
+    })
+
+    //double Mode A
+    $("#QRcode").swipe({
+        tap: function(event, direction, distance, duration, fingerCount, fingerData) {
+            exportRoot.gotoAndPlay();
+
+        }
+    });
+
+    //double Mode B
+    $("#drawCircle").swipe({
+        swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+            //console.log('test');
+            exportRoot.gotoAndPlay();
+
+        },
+        threshold: 50
+    });
+
 });
 
-
-//Single Mode
-$("#spot").swipe({
-    tap: function(event, target) {
-        exportRoot.gotoAndPlay();
-
-        console.log('test');
-    },
-    threshold: 150
-});
-
-
-$('#swipeHint').swipe({
-    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-        exportRoot.gotoAndPlay();
-        $('#swipeHint').hide();
-    },
-    threshold: 200
-})
-
-//double Mode A
-$("#QRcode").swipe({
-    tap: function(event, direction, distance, duration, fingerCount, fingerData) {
-        exportRoot.gotoAndPlay();
-
-    }
-});
-
-//double Mode B
-$("#drawCircle").swipe({
-    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-
-        //console.log('test');
-        exportRoot.gotoAndPlay();
-
-    },
-    threshold: 50
-});

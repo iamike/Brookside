@@ -54,6 +54,7 @@ function handleComplete(evt) {
     //hide progress
     $('#loadBody').hide();
 
+
 }
 
 function handleProgress(evt) {

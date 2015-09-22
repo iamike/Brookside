@@ -8,16 +8,18 @@ module.exports = function(grunt) {
             // 2. Configuration for concatinating files goes here.
             libs: {
                 src: [
-                    'js/libs/jquery.min.js',
+                    //'js/libs/jquery.min.js',
                     'fla/libs/easeljs-0.8.1.min.js',
                     'fla/libs/tweenjs-0.6.1.min.js',
                     'fla/libs/movieclip-0.8.1.min.js',
                     'fla/libs/preloadjs-0.6.1.min.js',
-                    'js/libs/jquery.transit.js',
                     'js/libs/TweenMax.min.js',
                     'js/libs/jquery.transit.js',
-                    'js/libs/lodash.min.js',
+                    //'js/libs/lodash.min.js',
                     'js/libs/jquery.touchSwipe.min.js'
+                    // 'js/libs/mootools.core.js',
+                    //  'js/libs/multiTouch.js',
+                    // 'js/libs/gestures.js'
                 ],
                 dest: 'build/libs.js',
             },
@@ -52,10 +54,9 @@ module.exports = function(grunt) {
                     'js/app.js'
                 ],
                 dest: 'build/doubleB.js'
-            },
+            }
         },
         imagemin: {
-            
             start: {
                 files: [{
                     expand: true,
@@ -135,7 +136,7 @@ module.exports = function(grunt) {
         },
         watch: {
             scripts: {
-                files: ['fla/*.*'],
+                files: ['fla/*.*', 'js/*.*'],
                 tasks: ['default']
 
             }
@@ -149,12 +150,12 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-watch');
+    //grunt.loadNpmTasks('grunt-contrib-watch');
 
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['clean:build', 'concat', /*'imagemin',*/ 'copy']);
-    grunt.registerTask('imagesDev', ['copy',/*'clean:build','imagemin'*/]);
+    grunt.registerTask('default', ['clean:build', 'concat',/*, 'imagemin'*/'copy' ]);
+    //grunt.registerTask('imagesDev', ['copy', /*'clean:build','imagemin'*/ ]);
 
 
 };
