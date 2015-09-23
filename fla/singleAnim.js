@@ -123,7 +123,7 @@ lib.properties = {
 
 
 (lib.bg_sence = function() {
-	this.spriteSheet = ss["singleAnim_atlas_2"];
+	this.spriteSheet = ss["singleAnim_atlas_"];
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
@@ -144,169 +144,169 @@ lib.properties = {
 
 
 (lib.Choco_one_00092 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_5"];
-	this.gotoAndStop(0);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.Choco_one_00094 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_5"];
+	this.spriteSheet = ss["singleAnim_atlas_"];
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
+(lib.Choco_one_00094 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_3"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
+
+
 (lib.Choco_one_00096 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_2"];
+	this.spriteSheet = ss["singleAnim_atlas_3"];
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Choco_one_00098 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_2"];
+	this.spriteSheet = ss["singleAnim_atlas_3"];
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Choco_one_00100 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_2"];
-	this.gotoAndStop(3);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Choco_one_00102 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_"];
-	this.gotoAndStop(0);
+	this.spriteSheet = ss["singleAnim_atlas_3"];
+	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Choco_one_00104 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_5"];
-	this.gotoAndStop(2);
+	this.spriteSheet = ss["singleAnim_atlas_3"];
+	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Choco_one_00106 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_5"];
-	this.gotoAndStop(3);
+	this.spriteSheet = ss["singleAnim_atlas_3"];
+	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Choco_one_00108 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_5"];
-	this.gotoAndStop(4);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Choco_one_00110 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_6"];
-	this.gotoAndStop(0);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Choco_one_00112 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_6"];
-	this.gotoAndStop(1);
+	this.spriteSheet = ss["singleAnim_atlas_3"];
+	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Choco_one_00114 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_6"];
-	this.gotoAndStop(2);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Choco_one_00116 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_6"];
-	this.gotoAndStop(3);
+	this.spriteSheet = ss["singleAnim_atlas_"];
+	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Choco_one_00118 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_2"];
-	this.gotoAndStop(4);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.Choco_one_00120 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_2"];
-	this.gotoAndStop(5);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.Choco_one_00122 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_2"];
-	this.gotoAndStop(6);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.Choco_one_00124 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_3"];
+	this.spriteSheet = ss["singleAnim_atlas_4"];
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Choco_one_00125 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_3"];
+(lib.Choco_one_00120 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_4"];
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Choco_one_00126 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_3"];
+(lib.Choco_one_00122 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_4"];
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Choco_one_00129 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_"];
-	this.gotoAndStop(1);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.Choco_one_00135 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_3"];
+(lib.Choco_one_00124 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_4"];
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Choco_one_00139 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_3"];
+(lib.Choco_one_00125 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_4"];
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Choco_one_00143 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_3"];
+(lib.Choco_one_00126 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_4"];
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Choco_one_00147 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_3"];
+(lib.Choco_one_00129 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_4"];
 	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Choco_one_00135 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_5"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Choco_one_00139 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_5"];
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Choco_one_00143 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_5"];
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Choco_one_00147 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_5"];
+	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -340,162 +340,162 @@ lib.properties = {
 
 
 (lib.Juice_one_00001 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_6"];
+	this.spriteSheet = ss["singleAnim_atlas_5"];
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Juice_one_00003 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_6"];
+	this.spriteSheet = ss["singleAnim_atlas_5"];
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Juice_one_00005 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_4"];
+	this.spriteSheet = ss["singleAnim_atlas_2"];
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Juice_one_00007 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_4"];
-	this.gotoAndStop(1);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.Juice_one_00009 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_"];
-	this.gotoAndStop(2);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.Juice_one_00011 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_6"];
+	this.spriteSheet = ss["singleAnim_atlas_5"];
 	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
+(lib.Juice_one_00009 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_6"];
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Juice_one_00011 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_2"];
+	this.gotoAndStop(1);
+}).prototype = p = new cjs.Sprite();
+
+
+
 (lib.Juice_one_00013 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_7"];
-	this.gotoAndStop(2);
+	this.spriteSheet = ss["singleAnim_atlas_6"];
+	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Juice_one_00015 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_7"];
-	this.gotoAndStop(3);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.Juice_one_00017 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_"];
-	this.gotoAndStop(3);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.Juice_one_00019 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_"];
-	this.gotoAndStop(4);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.Juice_one_00021 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_"];
-	this.gotoAndStop(5);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.Juice_one_00023 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_4"];
+	this.spriteSheet = ss["singleAnim_atlas_6"];
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Juice_one_00025 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_4"];
+(lib.Juice_one_00017 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_2"];
+	this.gotoAndStop(2);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Juice_one_00019 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_2"];
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
+(lib.Juice_one_00021 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_6"];
+	this.gotoAndStop(3);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Juice_one_00023 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_6"];
+	this.gotoAndStop(4);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Juice_one_00025 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_6"];
+	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+
+
+
 (lib.Juice_one_00027 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_4"];
+	this.spriteSheet = ss["singleAnim_atlas_2"];
 	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Juice_one_00028 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_4"];
-	this.gotoAndStop(5);
+	this.spriteSheet = ss["singleAnim_atlas_6"];
+	this.gotoAndStop(6);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Juice_one_00029 = function() {
 	this.spriteSheet = ss["singleAnim_atlas_7"];
-	this.gotoAndStop(4);
+	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Juice_one_00030 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_"];
-	this.gotoAndStop(6);
+	this.spriteSheet = ss["singleAnim_atlas_7"];
+	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Juice_one_00035 = function() {
 	this.spriteSheet = ss["singleAnim_atlas_7"];
-	this.gotoAndStop(5);
+	this.gotoAndStop(4);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Juice_one_00036 = function() {
 	this.spriteSheet = ss["singleAnim_atlas_7"];
-	this.gotoAndStop(6);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.Juice_one_00039 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_4"];
-	this.gotoAndStop(6);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.Juice_one_00043 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_7"];
-	this.gotoAndStop(7);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.Juice_one_00047 = function() {
-	this.spriteSheet = ss["singleAnim_atlas_5"];
 	this.gotoAndStop(5);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.result = function() {
-	this.spriteSheet = ss["singleAnim_atlas_5"];
+(lib.Juice_one_00039 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_2"];
+	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Juice_one_00043 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_2"];
 	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Juice_one_00047 = function() {
+	this.spriteSheet = ss["singleAnim_atlas_7"];
+	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.result = function() {
+	this.spriteSheet = ss["singleAnim_atlas_7"];
+	this.gotoAndStop(7);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -592,7 +592,7 @@ p.nominalBounds = new cjs.Rectangle(-110,-29,220,58);
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(-65.4,-52.2,53.1,54.8);
+p.nominalBounds = new cjs.Rectangle(-65.4,-52.2,53.1,54.7);
 
 
 (lib.Symbol4 = function() {
@@ -1039,20 +1039,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,300,373);
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(14.8,-4.7,53.1,54.8);
-
-
-(lib.Symbol1_2 = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// Layer 2
-	this.instance_1 = new lib.Symbol2("synched",0);
-	this.instance_1.setTransform(111.3,200.6,1,1,0,0,0,164.6,164.6);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({rotation:-153.5,x:146.2,y:184.5},25).wait(16));
-
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-38.6,31.2,53.1,54.8);
+p.nominalBounds = new cjs.Rectangle(14.8,-4.7,53.1,54.7);
 
 
 (lib.aa6 = function(mode,startPosition,loop) {
@@ -1172,7 +1159,35 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 
 
+(lib.Symbol5 = function() {
+	this.initialize();
+
+	// Layer 1
+	this.instance = new lib.Symbol2("synched",0);
+	this.instance.setTransform(40.3,69.8,1,1,-15.3,0,0,48.6,24.4);
+
+	this.addChild(this.instance);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(2.2,39,61.2,62.1);
+
+
+(lib.Symbol1_2 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Layer 2
+	this.instance_1 = new lib.Symbol5("synched",0);
+	this.instance_1.setTransform(185.8,162.3,1,1,0.1,0,0,253.2,140);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({regY:139.9,rotation:-110.8,x:185.9},29).wait(11));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-65.1,61.2,61.1,62);
+
+
 // stage content:
+
+
+
 (lib.singleAnim = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{showResult1:384,showResult2:408,showResult3:433});
 
@@ -1434,11 +1449,11 @@ p.nominalBounds = new cjs.Rectangle(-3.9,-0.6,83,67.5);
 
 	// 图层 4
 	this.instance_65 = new lib.Symbol4("synched",0);
-	this.instance_65.setTransform(133.6,595.9,1,1,0,0,0,57.9,57.9);
+	this.instance_65.setTransform(130.6,585.9,1,1,0,0,0,57.9,57.9);
 	this.instance_65.alpha = 0.809;
 	this.instance_65._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_65).wait(235).to({_off:false},0).wait(23).to({x:251.7,y:574.9,alpha:0.82},0).wait(24).to({x:453.6,y:646,alpha:0.809},0).wait(27).to({x:127.1,y:608.2},0).wait(23).to({x:254.7,y:567.9,alpha:0.82},0).wait(24).to({x:456.6,y:647,alpha:0.809},0).to({_off:true},28).wait(74));
+	this.timeline.addTween(cjs.Tween.get(this.instance_65).wait(235).to({_off:false},0).wait(23).to({x:239.7,y:561.9,alpha:0.82},0).wait(24).to({x:441.6,y:631,alpha:0.809},0).wait(27).to({x:126.1,y:600.2},0).wait(23).to({x:248.7,y:549.9,alpha:0.82},0).wait(24).to({x:437.6,y:627,alpha:0.809},0).to({_off:true},28).wait(74));
 
 	// 图层 3
 	this.instance_66 = new lib.a172("synched",0);
