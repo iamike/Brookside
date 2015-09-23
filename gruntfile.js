@@ -39,6 +39,14 @@ module.exports = function(grunt) {
                 ],
                 dest: 'build/single.js'
             },
+            distSingleTryout: {
+                src: [
+                    'fla/singleAnimTryout.js',
+                    'fla/singleTryoutInit.js',
+                    'js/app.js'
+                ],
+                dest: 'build/singleTryout.js'
+            },
             distDoubleA: {
                 src: [
                     'fla/doubleAnimA.js',
@@ -120,6 +128,13 @@ module.exports = function(grunt) {
                         cwd: 'fla/',
                         expand: true,
                         flatten: true,
+                        src: ['imagesTryout/*'],
+                        dest: './imagesTryout/',
+                        filter: 'isFile'
+                    }, {
+                        cwd: 'fla/',
+                        expand: true,
+                        flatten: true,
                         src: ['imagesDoubleA/*'],
                         dest: './imagesDoubleA/',
                         filter: 'isFile'
@@ -154,7 +169,7 @@ module.exports = function(grunt) {
 
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['clean:build', 'concat',/*, 'imagemin'*/'copy' ]);
+    grunt.registerTask('default', ['clean:build', 'concat', /*, 'imagemin'*/ 'copy']);
     //grunt.registerTask('imagesDev', ['copy', /*'clean:build','imagemin'*/ ]);
 
 

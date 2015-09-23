@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>singleAnimTryout</title>
+
+<script src="libs/easeljs-0.8.1.min.js"></script>
+<script src="libs/tweenjs-0.6.1.min.js"></script>
+<script src="libs/movieclip-0.8.1.min.js"></script>
+<script src="libs/preloadjs-0.6.1.min.js"></script>
+<script src="singleAnimTryout.js"></script>
+
+<script>
+var canvas, stage, exportRoot;
+
+function init() {
+	canvas = document.getElementById("canvas");
+	images = images||{};
+	ss = ss||{};
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+loader.loadFile({src:"imagesTryout/singleAnimTryout_atlas_.json", type:"spritesheet", id:"singleAnimTryout_atlas_"}, true);
+loader.loadFile({src:"imagesTryout/singleAnimTryout_atlas_2.json", type:"spritesheet", id:"singleAnimTryout_atlas_2"}, true);
+loader.loadFile({src:"imagesTryout/singleAnimTryout_atlas_3.json", type:"spritesheet", id:"singleAnimTryout_atlas_3"}, true);
+loader.loadFile({src:"imagesTryout/singleAnimTryout_atlas_4.json", type:"spritesheet", id:"singleAnimTryout_atlas_4"}, true);
+loader.loadFile({src:"imagesTryout/singleAnimTryout_atlas_5.json", type:"spritesheet", id:"singleAnimTryout_atlas_5"}, true);
+loader.loadFile({src:"imagesTryout/singleAnimTryout_atlas_6.json", type:"spritesheet", id:"singleAnimTryout_atlas_6"}, true);
+loader.loadFile({src:"imagesTryout/singleAnimTryout_atlas_7.json", type:"spritesheet", id:"singleAnimTryout_atlas_7"}, true);
+loader.loadFile({src:"imagesTryout/singleAnimTryout_atlas_8.json", type:"spritesheet", id:"singleAnimTryout_atlas_8"}, true);
+	loader.loadManifest(lib.properties.manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete(evt) {
+	var queue = evt.target;
+	ss["singleAnimTryout_atlas_"] = queue.getResult("singleAnimTryout_atlas_");
+	ss["singleAnimTryout_atlas_2"] = queue.getResult("singleAnimTryout_atlas_2");
+	ss["singleAnimTryout_atlas_3"] = queue.getResult("singleAnimTryout_atlas_3");
+	ss["singleAnimTryout_atlas_4"] = queue.getResult("singleAnimTryout_atlas_4");
+	ss["singleAnimTryout_atlas_5"] = queue.getResult("singleAnimTryout_atlas_5");
+	ss["singleAnimTryout_atlas_6"] = queue.getResult("singleAnimTryout_atlas_6");
+	ss["singleAnimTryout_atlas_7"] = queue.getResult("singleAnimTryout_atlas_7");
+	ss["singleAnimTryout_atlas_8"] = queue.getResult("singleAnimTryout_atlas_8");
+	exportRoot = new lib.singleAnimTryout();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+</script>
+</head>
+
+<body onload="init();" style="background-color:#D4D4D4">
+	<canvas id="canvas" width="640" height="1078" style="background-color:#FFFFFF"></canvas>
+</body>
+</html>
