@@ -144,7 +144,7 @@ a,img,canvas { -webkit-user-select: none !important; }
     margin-left: -60px;
     left: 50%;
     top: 33px;
-    z-index: 999;
+    z-index: 99999;
 
 }
 
@@ -156,7 +156,11 @@ a,img,canvas { -webkit-user-select: none !important; }
 }
 
 /* load start */
-.load-body{ position: absolute; left:0px; top:0px; z-index: 1000; width: 320px; height: 539px; z-index: 99999;}
+.load-body{ position: absolute; left:0px; top:0px; z-index: 1000; width: 320px; height: 539px; z-index: 9999;
+
+background: transparent url(../imageAssets/2-1-f.png) no-repeat scroll 0px 0px;
+
+}
 .load-txt{ position: absolute; left:78px; top:240px; width: 167px;}
 .load-watch-main{ position: absolute; left:110px; top:240px; width: 108px; height: 108px; text-align: center; }
 .load-watch-main .progress {
@@ -168,7 +172,13 @@ a,img,canvas { -webkit-user-select: none !important; }
 
 /* load end */
 #start {
-    position: absolute; width: 165px; height: 40px;left: 50%;  margin-left:-75px; top:244px;z-index: 9999;
+    position: absolute;
+    width: 165px;
+    height: 70px;
+    left: 50%;
+    margin-left: -75px;
+    top: 231px;
+    z-index: 9999;
 }
 /* bg start */
 .big-bg-body{position: absolute; left:0px; top:0px; width: 320px; height: 539px;}
@@ -205,10 +215,11 @@ a,img,canvas { -webkit-user-select: none !important; }
 }
 .option {
     display: none;
-    position: absolute; z-index: 99999; 
+    position: absolute; z-index: 999999; 
     width: 70px; 
     height: 70px;
-
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
 }
 
 #option1 {    left: 64px;

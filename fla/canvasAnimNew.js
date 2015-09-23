@@ -134,11 +134,11 @@ lib.properties = {
 
 	// Layer 2
 	this.instance = new lib.hand();
-	this.instance.setTransform(65.6,35.6,1,1,59);
+	this.instance.setTransform(67.9,47.8,1,1,116.5);
 
 	this.addChild(this.instance);
 }).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(25.3,35.6,63.5,62.7);
+p.nominalBounds = new cjs.Rectangle(5.8,26.9,62.1,61.2);
 
 
 (lib.s14 = function() {
@@ -505,10 +505,10 @@ p.nominalBounds = new cjs.Rectangle(0,0,120,33.4);
 
 	// 图层 35
 	this.instance_8 = new lib.s15("synched",0);
-	this.instance_8.setTransform(131.5,493.3,1.35,1.35,-33,0,0,34.4,11.8);
+	this.instance_8.setTransform(319.9,672,1.348,1.348,-123.1,0,0,-83.7,84.8);
 	this.instance_8._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(5).to({_off:false},0).wait(8).to({scaleX:1.35,scaleY:1.35,rotation:-32.9,x:136.2,y:491.6},0).to({rotation:-32.8,x:192.5,y:471.3},8).to({scaleX:1.35,scaleY:1.35,rotation:-32.9,x:261.5,y:465.3},8).to({scaleX:1.35,scaleY:1.35,rotation:-32.8,x:344,y:484.3},8).to({scaleX:1.35,scaleY:1.35,rotation:-33,x:425.6,y:524.7},7).to({_off:true},21).wait(96));
+	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(2).to({_off:false},0).to({scaleX:1.35,scaleY:1.35,rotation:-25,x:319.8,y:671.9},41).wait(8).to({scaleX:1.35,scaleY:1.35,rotation:-123.1,x:319.9,y:672},0).to({scaleX:1.35,scaleY:1.35,rotation:-25,x:319.8,y:671.9},41).to({_off:true},8).wait(61));
 
 	// a4.png
 	this.instance_9 = new lib.m3("synched",0);
