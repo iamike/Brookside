@@ -1891,6 +1891,23 @@ function handleComplete(evt) {
     $('#loadBody').hide();
 
 
+
+    
+    // if (window.devicePixelRatio) {
+    //     // grab the width and height from canvas
+    //     var height = canvas.getAttribute('height');
+    //     var width = canvas.getAttribute('width');
+    //     // reset the canvas width and height with window.devicePixelRatio applied
+    //     canvas.setAttribute('width', Math.round(width * window.devicePixelRatio));
+    //     canvas.setAttribute('height', Math.round(height * window.devicePixelRatio));
+    //     // force the canvas back to the original size using css
+    //     canvas.style.width = width + "px";
+    //     canvas.style.height = height + "px";
+    //     // set CreateJS to render scaled
+    //     stage.scaleX = stage.scaleY = window.devicePixelRatio;
+    // }
+
+
 }
 
 function handleProgress(evt) {
@@ -2028,6 +2045,8 @@ $(function() {
         },
         threshold: 50
     });
+
+
 
 });
 

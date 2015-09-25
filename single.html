@@ -27,7 +27,7 @@
                 </div>
             </div>
             <!-- loadBody end -->
-            <img class="scaleAnim" id="spot" src="imageAssets/spot.png" width="52" height="52" />
+            <img class="scaleAnim" id="spot" src="imageAssets/spot.png" width="52" height="52"  />
             <div id="swipeHint"></div>
             <div class="option" id="option1"></div>
             <div class="option" id="option2"></div>
@@ -37,21 +37,6 @@
         </div>
     </div>
     <script src="build/single.js"></script>
-    <script type="text/javascript">
-    if (window.devicePixelRatio) {
-        // grab the width and height from canvas
-        var height = canvas.getAttribute('height');
-        var width = canvas.getAttribute('width');
-        // reset the canvas width and height with window.devicePixelRatio applied
-        canvas.setAttribute('width', Math.round(width * window.devicePixelRatio));
-        canvas.setAttribute('height', Math.round(height * window.devicePixelRatio));
-        // force the canvas back to the original size using css
-        canvas.style.width = width + "px";
-        canvas.style.height = height + "px";
-        // set CreateJS to render scaled
-        stage.scaleX = stage.scaleY = window.devicePixelRatio;
-    }
-    </script>
 </body>
 
 </html>
