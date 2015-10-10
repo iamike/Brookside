@@ -39,14 +39,6 @@ module.exports = function(grunt) {
                 ],
                 dest: 'build/single.js'
             },
-            distSingleTryout: {
-                src: [
-                    'fla/singleAnimTryout.js',
-                    'fla/singleTryoutInit.js',
-                    'js/app.js'
-                ],
-                dest: 'build/singleTryout.js'
-            },
             distDoubleA: {
                 src: [
                     'fla/doubleAnimA.js',
@@ -124,14 +116,7 @@ module.exports = function(grunt) {
                         src: ['imagesSingle/*'],
                         dest: './imagesSingle/',
                         filter: 'isFile'
-                    }, {
-                        cwd: 'fla/',
-                        expand: true,
-                        flatten: true,
-                        src: ['imagesTryout/*'],
-                        dest: './imagesTryout/',
-                        filter: 'isFile'
-                    }, {
+                    },{
                         cwd: 'fla/',
                         expand: true,
                         flatten: true,
