@@ -1994,6 +1994,10 @@ $(function() {
             tap: function(event, target) {
                 console.log(target.id);
                 //exportRoot.gotoAndPlay("showResult1");
+                  //console.log(target.id);
+                var chart = ['option1','option2','option3'];
+                var chartRef = ['showResult1','showResult2','showResult3'];
+                exportRoot.gotoAndPlay(chartRef[chart.indexOf(target.id)]);
             }
         })
         /*  */
