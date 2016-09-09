@@ -1788,7 +1788,9 @@ $(function() {
     $('.option').swipe({
             tap: function(event, target) {
                 console.log(target.id);
-                exportRoot.gotoAndPlay("showResult"+target.id);
+                var chart = ['option1','option2','option3'];
+                var chartRef = ['showResult1','showResult2','showResult3'];
+                exportRoot.gotoAndPlay(chartRef[chart.indexOf(target.id)]);
             }
         })
         /*  */
