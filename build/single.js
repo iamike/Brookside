@@ -1788,7 +1788,7 @@ $(function() {
     $('.option').swipe({
             tap: function(event, target) {
                 console.log(target.id);
-                //exportRoot.gotoAndPlay("showResult1");
+                exportRoot.gotoAndPlay("showResult"+target.id);
             }
         })
         /*  */
